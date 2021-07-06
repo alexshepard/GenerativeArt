@@ -32,7 +32,7 @@ struct MainMenu: View {
                         NavigationLink {
                             AcrossShapes()
                         } label: {
-                            MenuItem(title: "Across Shapes", creationDate: "5 July 2021")
+                            MenuItem(title: AcrossShapes.name, creationDate: AcrossShapes.name)
                         }
                     }
                 }

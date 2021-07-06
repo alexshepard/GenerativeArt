@@ -9,8 +9,8 @@ import SwiftUI
 
 struct AcrossShapes: View {
     
-    var name = "Across Shapes"
-    var date = "5 July 2021"
+    public static let name = "Across Shapes"
+    public static let date = "5 July 2021"
     
     let timer = Timer.publish(every: 1/10, on: .main, in: .common).autoconnect()
     
