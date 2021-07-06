@@ -13,14 +13,7 @@ struct AcrossShapes: View {
     public static let date = "5 July 2021"
     
     let timer = Timer.publish(every: 1/10, on: .main, in: .common).autoconnect()
-    
-    @State private var path: Path = Path { path in
-        path.move(to: CGPoint(x: 10, y: 10))
-        path.addLine(to: CGPoint(x: 15, y: 15))
-    }
-    
-    //var size: CGSize = CGSize(width: 400, height: 400)
-    
+        
     @State private var cPaths = [Path]()
     var c = Color(.sRGB, red: 0.2, green: 0.03, blue: 0.15, opacity: 0.10)
     
@@ -72,8 +65,7 @@ struct AcrossShapes: View {
                     
                 }
             } else {
-                Text("ios 14 view")
-                // Fallback on earlier versions
+                Text("ios 14 fallback view")
             }
         }
     }
