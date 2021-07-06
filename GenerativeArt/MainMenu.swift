@@ -44,7 +44,6 @@ struct MainMenu: View {
                         } label: {
                             MenuItem(title: PerlinAcrossShapes.name, creationDate: PerlinAcrossShapes.date)
                         }
-
                     }
                 }
                 .navigationBarTitle("My Generative Art")
