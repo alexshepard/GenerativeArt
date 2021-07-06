@@ -34,7 +34,7 @@ struct AcrossShapes: View {
                     }
                 }
                 .background(Color.white)
-                .onReceive(timer) { input in
+                .onReceive(timer) { _ in
                     let x = CGFloat.random(in: 10 ..< geom.size.width - 10)
                     let y = CGFloat.random(in: 10 ..< geom.size.height - 10)
                     
