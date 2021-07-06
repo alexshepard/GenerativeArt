@@ -7,22 +7,6 @@
 
 import SwiftUI
 
-// thanks paul!
-extension Color {
-    
-    var rgba: (red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat) {
-        var red: CGFloat = 0
-        var green: CGFloat = 0
-        var blue: CGFloat = 0
-        var alpha: CGFloat = 0
-        
-        let c = UIColor(self)
-        c.getRed(&red, green: &green, blue: &blue, alpha: &alpha)
-
-        return (red, green, blue, alpha)
-    }
-}
-
 struct AcrossComplementaryShapes: View {
     public static let name = "Across Complementary Shapes"
     public static let date = "5 July 2021"
@@ -59,7 +43,7 @@ struct AcrossComplementaryShapes: View {
                         
                         let trailsRect = CGRect(x: 0, y: 0, width: size.width, height: size.height)
                         let trailsColor = Color.init(.sRGB, white: 1.0, opacity: 0.1)
-                        context.stroke(Path.init(trailsRect), with: .color(trailsColor))
+                        context.fill(Path.init(trailsRect), with: .color(trailsColor))
                     }
                 }
                 .background(Color.white)
