@@ -13,6 +13,7 @@
 		FA0F141626941B1400B962E5 /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0F141526941B1400B962E5 /* MainMenu.swift */; };
 		FA0F141826941B6B00B962E5 /* AcrossShapes.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0F141726941B6B00B962E5 /* AcrossShapes.swift */; };
 		FA0F141B269421DE00B962E5 /* AcrossComplementaryShapes.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0F141A269421DE00B962E5 /* AcrossComplementaryShapes.swift */; };
+		FA0F141D26942BF100B962E5 /* PerlinAcrossShapes.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0F141C26942BF100B962E5 /* PerlinAcrossShapes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		FA0F141526941B1400B962E5 /* MainMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenu.swift; sourceTree = "<group>"; };
 		FA0F141726941B6B00B962E5 /* AcrossShapes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcrossShapes.swift; sourceTree = "<group>"; };
 		FA0F141A269421DE00B962E5 /* AcrossComplementaryShapes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcrossComplementaryShapes.swift; sourceTree = "<group>"; };
+		FA0F141C26942BF100B962E5 /* PerlinAcrossShapes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerlinAcrossShapes.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 			children = (
 				FA0F141726941B6B00B962E5 /* AcrossShapes.swift */,
 				FA0F141A269421DE00B962E5 /* AcrossComplementaryShapes.swift */,
+				FA0F141C26942BF100B962E5 /* PerlinAcrossShapes.swift */,
 			);
 			path = "July 2021";
 			sourceTree = "<group>";
@@ -152,6 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA0F141626941B1400B962E5 /* MainMenu.swift in Sources */,
+				FA0F141D26942BF100B962E5 /* PerlinAcrossShapes.swift in Sources */,
 				FA0F141B269421DE00B962E5 /* AcrossComplementaryShapes.swift in Sources */,
 				FA0F140826941B0400B962E5 /* GenerativeArtApp.swift in Sources */,
 				FA0F141826941B6B00B962E5 /* AcrossShapes.swift in Sources */,

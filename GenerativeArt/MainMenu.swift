@@ -39,6 +39,11 @@ struct MainMenu: View {
                         } label: {
                             MenuItem(title: AcrossComplementaryShapes.name, creationDate: AcrossComplementaryShapes.date)
                         }
+                        NavigationLink {
+                            PerlinAcrossShapes()
+                        } label: {
+                            MenuItem(title: PerlinAcrossShapes.name, creationDate: PerlinAcrossShapes.date)
+                        }
 
                     }
                 }
