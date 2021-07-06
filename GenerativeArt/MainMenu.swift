@@ -32,8 +32,14 @@ struct MainMenu: View {
                         NavigationLink {
                             AcrossShapes()
                         } label: {
-                            MenuItem(title: AcrossShapes.name, creationDate: AcrossShapes.name)
+                            MenuItem(title: AcrossShapes.name, creationDate: AcrossShapes.date)
                         }
+                        NavigationLink {
+                            AcrossComplementaryShapes()
+                        } label: {
+                            MenuItem(title: AcrossComplementaryShapes.name, creationDate: AcrossComplementaryShapes.date)
+                        }
+
                     }
                 }
                 .navigationBarTitle("My Generative Art")
