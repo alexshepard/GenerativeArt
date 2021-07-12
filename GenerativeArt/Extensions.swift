@@ -18,4 +18,8 @@ extension CGFloat {
         }
         return newVal
     }
+    
+    func deg2rad() -> CGFloat {
+        return self * .pi / 180
+    }
 }

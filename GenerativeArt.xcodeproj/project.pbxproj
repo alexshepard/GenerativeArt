@@ -20,6 +20,7 @@
 		FA8C8609269BCA260008AFB1 /* HelloColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8C8608269BCA260008AFB1 /* HelloColor.swift */; };
 		FA8C860B269BD5030008AFB1 /* ColorSpectrumGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8C860A269BD5030008AFB1 /* ColorSpectrumGrid.swift */; };
 		FA8C860D269BE5D70008AFB1 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8C860C269BE5D70008AFB1 /* Extensions.swift */; };
+		FA8C8610269BE8430008AFB1 /* ColorSpectrumCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8C860F269BE8430008AFB1 /* ColorSpectrumCircle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		FA8C8608269BCA260008AFB1 /* HelloColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloColor.swift; sourceTree = "<group>"; };
 		FA8C860A269BD5030008AFB1 /* ColorSpectrumGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSpectrumGrid.swift; sourceTree = "<group>"; };
 		FA8C860C269BE5D70008AFB1 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		FA8C860F269BE8430008AFB1 /* ColorSpectrumCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSpectrumCircle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +132,7 @@
 			children = (
 				FA8C8608269BCA260008AFB1 /* HelloColor.swift */,
 				FA8C860A269BD5030008AFB1 /* ColorSpectrumGrid.swift */,
+				FA8C860F269BE8430008AFB1 /* ColorSpectrumCircle.swift */,
 			);
 			path = Color;
 			sourceTree = "<group>";
@@ -204,6 +207,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA8C8610269BE8430008AFB1 /* ColorSpectrumCircle.swift in Sources */,
 				FA0F141626941B1400B962E5 /* MySketchesMenu.swift in Sources */,
 				FA4494A42694CF9300892772 /* MainMenu.swift in Sources */,
 				FA8C8609269BCA260008AFB1 /* HelloColor.swift in Sources */,
