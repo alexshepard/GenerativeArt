@@ -2,54 +2,27 @@
 //  MainMenu.swift
 //  GenerativeArt
 //
-//  Created by Alex Shepard on 7/5/21.
+//  Created by Alex Shepard on 7/6/21.
 //
 
 import SwiftUI
 
-
-struct MenuItem: View {
-    var title: String
-    var creationDate: String
-    
-    var body: some View {
-        HStack {
-            Text(title)
-            Spacer()
-            Text(creationDate)
-                .font(.footnote)
-                .foregroundColor(.secondary)
-        }
-    }
-}
-
 struct MainMenu: View {
     var body: some View {
-        if #available(iOS 15.0, *) {
-            NavigationView {
-                List {
-                    Section("July 2021") {
-                        NavigationLink {
-                            AcrossShapes()
-                        } label: {
-                            MenuItem(title: AcrossShapes.name, creationDate: AcrossShapes.date)
-                        }
-                        NavigationLink {
-                            AcrossComplementaryShapes()
-                        } label: {
-                            MenuItem(title: AcrossComplementaryShapes.name, creationDate: AcrossComplementaryShapes.date)
-                        }
-                        NavigationLink {
-                            PerlinAcrossShapes()
-                        } label: {
-                            MenuItem(title: PerlinAcrossShapes.name, creationDate: PerlinAcrossShapes.date)
-                        }
+        NavigationView {
+            List {
+                Section {
+                    NavigationLink(destination: MySketchesMenu()) {
+                        Text("My Sketches")
                     }
                 }
-                .navigationBarTitle("My Generative Art")
+                
+                Section(header: Text("Books & Tutorials")) {
+                    NavigationLink(destination: GenerativeDesignBookMenu()) {
+                        Text("Generative Design Book")
+                    }
+                }
             }
-        } else {
-            Text("iOS 14 Fallback view")
         }
     }
 }
