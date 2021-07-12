@@ -34,8 +34,8 @@ struct ColorSpectrumGrid: View {
                 .frame(width: geom.size.width, height: geom.size.height)
                 .gesture(DragGesture(minimumDistance: 0, coordinateSpace: .global)
                             .onChanged({ newValue in
-                                stepX = newValue.location.x
-                                stepY = newValue.location.y
+                                stepX = newValue.location.x.clamp(range: 1...geom.size.width)
+                                stepY = newValue.location.y.clamp(range: 1...geom.size.height)
                             })
                 )
             }
