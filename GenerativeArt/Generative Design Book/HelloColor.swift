@@ -31,24 +31,14 @@ struct HelloColor: View {
                 .frame(width: geom.size.width, height: geom.size.height)
                 .gesture(DragGesture(minimumDistance: 0, coordinateSpace: .global)
                             .onChanged({ newValue in
-                    let hue = clamp(newValue.location.y / geom.size.height)
+                    let hue = (newValue.location.y / geom.size.height).clamp()
                     fgColor = Color(hue: hue, saturation: 1.0, brightness: 1.0)
                     bgColor = Color(hue: 1-hue, saturation: 1.0, brightness: 1.0)
-                    rectSideLength = clamp(newValue.location.x / geom.size.width) * geom.size.width
+                    rectSideLength = (newValue.location.x / geom.size.width).clamp() * geom.size.width
                 })
                 )
             }
         }
-    }
-    
-    func clamp(_ val: CGFloat, range: ClosedRange<CGFloat> = CGFloat(0)...CGFloat(1.0)) -> CGFloat {
-        var newVal = val
-        if newVal > range.upperBound {
-            newVal = range.upperBound
-        } else if newVal < range.lowerBound {
-            newVal = range.lowerBound
-        }
-        return newVal
     }
 }
 
