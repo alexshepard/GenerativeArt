@@ -17,6 +17,12 @@ struct GenerativeDesignBookMenu: View {
                     } label: {
                         MenuItem(title: HelloColor.name, creationDate: HelloColor.date)
                     }
+                    NavigationLink {
+                        ColorSpectrumGrid()
+                    } label: {
+                        MenuItem(title: ColorSpectrumGrid.name, creationDate: ColorSpectrumGrid.date)
+                    }
+
                 }
             }
             .navigationBarTitle("Generative Design", displayMode: .inline)
