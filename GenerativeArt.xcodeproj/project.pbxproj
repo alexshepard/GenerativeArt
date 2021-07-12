@@ -103,8 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				FA4494A52694CFFE00892772 /* GenerativeDesignBookMenu.swift */,
-				FA8C8608269BCA260008AFB1 /* HelloColor.swift */,
-				FA8C860A269BD5030008AFB1 /* ColorSpectrumGrid.swift */,
+				FA8C860E269BE80F0008AFB1 /* Color */,
 			);
 			path = "Generative Design Book";
 			sourceTree = "<group>";
@@ -124,6 +123,15 @@
 				FA4494A82694D01800892772 /* MenuItem.swift */,
 			);
 			path = "Shared Views";
+			sourceTree = "<group>";
+		};
+		FA8C860E269BE80F0008AFB1 /* Color */ = {
+			isa = PBXGroup;
+			children = (
+				FA8C8608269BCA260008AFB1 /* HelloColor.swift */,
+				FA8C860A269BD5030008AFB1 /* ColorSpectrumGrid.swift */,
+			);
+			path = Color;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
