@@ -28,7 +28,7 @@ struct ColorSpectrumCircle: View {
             .pickerStyle(.segmented)
             
             GeometryReader { geom in
-                if #available(iOS 15.0, *) {
+                if #available(iOS 15.0, *) {                    
                     Canvas { context, size in
                         let radius: CGFloat = size.width/2 - 20
                         let centerPt = CGPoint(x: size.width / 2, y: size.height / 2)
