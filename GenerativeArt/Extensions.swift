@@ -22,4 +22,13 @@ extension CGFloat {
     func deg2rad() -> CGFloat {
         return self * .pi / 180
     }
+    
+    func map(minRange: CGFloat, maxRange: CGFloat, minDomain: CGFloat, maxDomain: CGFloat) -> CGFloat {
+        return minDomain + (maxDomain - minDomain) * (self - minRange) / (maxRange - minRange)
+    }
+
+    func lerp(to: CGFloat, alpha: CGFloat) -> CGFloat {
+        return self + alpha * (to - self)
+    }
 }
+
