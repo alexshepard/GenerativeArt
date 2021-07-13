@@ -23,16 +23,13 @@ struct ColorSpectrumGrid: View {
                             let hue = (gridX / geom.size.width).clamp()
                             let saturation = 1 - (gridY / geom.size.height).clamp()
                             let color = Color(hue: hue, saturation: saturation, brightness: 1.0)
-                            
                             let rect = CGRect(x: gridX, y: gridY, width: stepX, height: stepY)
-                            
                             context.fill(Path(rect), with:.color(color))
                         }
                     }
                 }
-                .edgesIgnoringSafeArea(.all)
                 .frame(width: geom.size.width, height: geom.size.height)
-                .gesture(DragGesture(minimumDistance: 0, coordinateSpace: .global)
+                .gesture(DragGesture(minimumDistance: 0, coordinateSpace: .local)
                             .onChanged({ newValue in
                                 stepX = newValue.location.x.clamp(range: 1...geom.size.width)
                                 stepY = newValue.location.y.clamp(range: 1...geom.size.height)
