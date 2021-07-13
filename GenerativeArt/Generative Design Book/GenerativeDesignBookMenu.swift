@@ -29,6 +29,13 @@ struct GenerativeDesignBookMenu: View {
                     } label: {
                         MenuItem(title: ColorSpectrumCircle.name, creationDate: ColorSpectrumCircle.date)
                     }
+                    
+                    NavigationLink {
+                        ColorPaletteInterpolation()
+                    } label: {
+                        MenuItem(title: ColorPaletteInterpolation.name, creationDate: ColorPaletteInterpolation.date)
+                    }
+
 
 
                 }
