@@ -20,7 +20,7 @@ struct ColorSpectrumGrid: View {
                 Canvas { context, size in
                     for gridY in stride(from: 0, through: geom.size.height, by: stepY) {
                         for gridX in stride(from: 0, through: geom.size.width, by: stepX) {
-                            let hue = (gridX / geom.size.height).clamp()
+                            let hue = (gridX / geom.size.width).clamp()
                             let saturation = 1 - (gridY / geom.size.height).clamp()
                             let color = Color(hue: hue, saturation: saturation, brightness: 1.0)
                             
