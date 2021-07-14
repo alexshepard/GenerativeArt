@@ -14,6 +14,7 @@
 		FA0F141826941B6B00B962E5 /* AcrossShapes.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0F141726941B6B00B962E5 /* AcrossShapes.swift */; };
 		FA0F141B269421DE00B962E5 /* AcrossComplementaryShapes.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0F141A269421DE00B962E5 /* AcrossComplementaryShapes.swift */; };
 		FA0F141D26942BF100B962E5 /* PerlinAcrossShapes.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0F141C26942BF100B962E5 /* PerlinAcrossShapes.swift */; };
+		FA1C1D69269EA822002BF120 /* RGBInterpolation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1C1D68269EA822002BF120 /* RGBInterpolation.swift */; };
 		FA4494A42694CF9300892772 /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4494A32694CF9300892772 /* MainMenu.swift */; };
 		FA4494A62694CFFE00892772 /* GenerativeDesignBookMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4494A52694CFFE00892772 /* GenerativeDesignBookMenu.swift */; };
 		FA4494A92694D01800892772 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4494A82694D01800892772 /* MenuItem.swift */; };
@@ -33,6 +34,7 @@
 		FA0F141726941B6B00B962E5 /* AcrossShapes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcrossShapes.swift; sourceTree = "<group>"; };
 		FA0F141A269421DE00B962E5 /* AcrossComplementaryShapes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcrossComplementaryShapes.swift; sourceTree = "<group>"; };
 		FA0F141C26942BF100B962E5 /* PerlinAcrossShapes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerlinAcrossShapes.swift; sourceTree = "<group>"; };
+		FA1C1D68269EA822002BF120 /* RGBInterpolation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RGBInterpolation.swift; sourceTree = "<group>"; };
 		FA4494A32694CF9300892772 /* MainMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenu.swift; sourceTree = "<group>"; };
 		FA4494A52694CFFE00892772 /* GenerativeDesignBookMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerativeDesignBookMenu.swift; sourceTree = "<group>"; };
 		FA4494A82694D01800892772 /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 				FA8C860A269BD5030008AFB1 /* ColorSpectrumGrid.swift */,
 				FA8C860F269BE8430008AFB1 /* ColorSpectrumCircle.swift */,
 				FAE3D88C269D3CD500170749 /* ColorPaletteInterpolation.swift */,
+				FA1C1D68269EA822002BF120 /* RGBInterpolation.swift */,
 			);
 			path = Color;
 			sourceTree = "<group>";
@@ -216,6 +219,7 @@
 				FA8C8609269BCA260008AFB1 /* HelloColor.swift in Sources */,
 				FA0F141D26942BF100B962E5 /* PerlinAcrossShapes.swift in Sources */,
 				FA8C860B269BD5030008AFB1 /* ColorSpectrumGrid.swift in Sources */,
+				FA1C1D69269EA822002BF120 /* RGBInterpolation.swift in Sources */,
 				FA0F141B269421DE00B962E5 /* AcrossComplementaryShapes.swift in Sources */,
 				FA0F140826941B0400B962E5 /* GenerativeArtApp.swift in Sources */,
 				FA4494A92694D01800892772 /* MenuItem.swift in Sources */,
