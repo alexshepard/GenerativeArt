@@ -31,10 +31,10 @@ struct HelloColor: View {
                 .frame(width: geom.size.width, height: geom.size.height)
                 .gesture(DragGesture(minimumDistance: 0, coordinateSpace: .global)
                             .onChanged({ newValue in
-                    let hue = (newValue.location.y / geom.size.height).clamp()
+                    let hue = (newValue.location.y / geom.size.height).clamp(to: 0...1)
                     fgColor = Color(hue: hue, saturation: 1.0, brightness: 1.0)
                     bgColor = Color(hue: 1-hue, saturation: 1.0, brightness: 1.0)
-                    rectSideLength = (newValue.location.x / geom.size.width).clamp() * geom.size.width
+                    rectSideLength = (newValue.location.x / geom.size.width).clamp(to: 0...1) * geom.size.width
                 })
                 )
             }

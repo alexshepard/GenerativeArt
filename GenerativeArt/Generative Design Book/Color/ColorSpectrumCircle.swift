@@ -49,7 +49,7 @@ struct ColorSpectrumCircle: View {
                             }
 
                             // setup the color based on the angle and the tap location
-                            let hue = CGFloat(angle / 360).clamp()
+                            let hue = CGFloat(angle / 360).clamp(to: 0...1)
                             let color = Color(hue: hue, saturation: 1 - touchX, brightness: 1 - touchY)
                             
                             
@@ -62,8 +62,8 @@ struct ColorSpectrumCircle: View {
                     .frame(width: geom.size.width, height: geom.size.height)
                     .gesture(DragGesture(minimumDistance: 0, coordinateSpace: .global)
                                 .onChanged({ newValue in
-                                    touchX = newValue.location.x.clamp(range: 1...geom.size.width) / geom.size.width
-                                    touchY = newValue.location.y.clamp(range: 1...geom.size.height) / geom.size.height
+                                    touchX = newValue.location.x.clamp(to: 1...geom.size.width) / geom.size.width
+                                    touchY = newValue.location.y.clamp(to: 1...geom.size.height) / geom.size.height
                                 })
                              )
                 }

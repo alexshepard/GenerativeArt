@@ -20,8 +20,8 @@ struct ColorSpectrumGrid: View {
                 Canvas { context, size in
                     for gridY in stride(from: 0, through: geom.size.height, by: stepY) {
                         for gridX in stride(from: 0, through: geom.size.width, by: stepX) {
-                            let hue = (gridX / geom.size.width).clamp()
-                            let saturation = 1 - (gridY / geom.size.height).clamp()
+                            let hue = (gridX / geom.size.width).clamp(to: 0...1)
+                            let saturation = 1 - (gridY / geom.size.height).clamp(to: 0...1)
                             let color = Color(hue: hue, saturation: saturation, brightness: 1.0)
                             let rect = CGRect(x: gridX, y: gridY, width: stepX, height: stepY)
                             context.fill(Path(rect), with:.color(color))
@@ -31,8 +31,8 @@ struct ColorSpectrumGrid: View {
                 .frame(width: geom.size.width, height: geom.size.height)
                 .gesture(DragGesture(minimumDistance: 0, coordinateSpace: .local)
                             .onChanged({ newValue in
-                                stepX = newValue.location.x.clamp(range: 1...geom.size.width)
-                                stepY = newValue.location.y.clamp(range: 1...geom.size.height)
+                                stepX = newValue.location.x.clamp(to: 1...geom.size.width)
+                                stepY = newValue.location.y.clamp(to: 1...geom.size.height)
                             })
                 )
             }

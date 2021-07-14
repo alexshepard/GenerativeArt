@@ -83,13 +83,13 @@ struct ColorPaletteInterpolation: View {
                                     maxRange: geom.size.width,
                                     minDomain: 2,
                                     maxDomain: 100
-                                ).clamp(range: 2...100))
+                                ).clamp(to: 2...100))
                                 self.tileCountY = Int(newValue.location.y.map(
                                     minRange: 0,
                                     maxRange: geom.size.height,
                                     minDomain: 2,
                                     maxDomain: 10
-                                ).clamp(range: 2...10))
+                                ).clamp(to: 2...10))
                             })
                 )
             }
