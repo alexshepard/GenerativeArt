@@ -41,7 +41,12 @@ struct GenerativeDesignBookMenu: View {
                     } label: {
                         MenuItem(title: RGBInterpolation.name, creationDate: RGBInterpolation.date)
                     }
-
+                    
+                    NavigationLink {
+                        ColorFromImages()
+                    } label: {
+                        MenuItem(title: ColorFromImages.name, creationDate: ColorFromImages.date)
+                    }
 
                 }
             }

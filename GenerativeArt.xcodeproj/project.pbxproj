@@ -18,6 +18,7 @@
 		FA4494A42694CF9300892772 /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4494A32694CF9300892772 /* MainMenu.swift */; };
 		FA4494A62694CFFE00892772 /* GenerativeDesignBookMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4494A52694CFFE00892772 /* GenerativeDesignBookMenu.swift */; };
 		FA4494A92694D01800892772 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4494A82694D01800892772 /* MenuItem.swift */; };
+		FA64F09F26A251BC007D3D31 /* ColorFromImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA64F09E26A251BB007D3D31 /* ColorFromImages.swift */; };
 		FA8C8609269BCA260008AFB1 /* HelloColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8C8608269BCA260008AFB1 /* HelloColor.swift */; };
 		FA8C860B269BD5030008AFB1 /* ColorSpectrumGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8C860A269BD5030008AFB1 /* ColorSpectrumGrid.swift */; };
 		FA8C860D269BE5D70008AFB1 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8C860C269BE5D70008AFB1 /* Extensions.swift */; };
@@ -38,6 +39,7 @@
 		FA4494A32694CF9300892772 /* MainMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenu.swift; sourceTree = "<group>"; };
 		FA4494A52694CFFE00892772 /* GenerativeDesignBookMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerativeDesignBookMenu.swift; sourceTree = "<group>"; };
 		FA4494A82694D01800892772 /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
+		FA64F09E26A251BB007D3D31 /* ColorFromImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorFromImages.swift; sourceTree = "<group>"; };
 		FA8C8608269BCA260008AFB1 /* HelloColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloColor.swift; sourceTree = "<group>"; };
 		FA8C860A269BD5030008AFB1 /* ColorSpectrumGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSpectrumGrid.swift; sourceTree = "<group>"; };
 		FA8C860C269BE5D70008AFB1 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
@@ -139,6 +141,7 @@
 				FA8C860F269BE8430008AFB1 /* ColorSpectrumCircle.swift */,
 				FAE3D88C269D3CD500170749 /* ColorPaletteInterpolation.swift */,
 				FA1C1D68269EA822002BF120 /* RGBInterpolation.swift */,
+				FA64F09E26A251BB007D3D31 /* ColorFromImages.swift */,
 			);
 			path = Color;
 			sourceTree = "<group>";
@@ -218,6 +221,7 @@
 				FA4494A42694CF9300892772 /* MainMenu.swift in Sources */,
 				FA8C8609269BCA260008AFB1 /* HelloColor.swift in Sources */,
 				FA0F141D26942BF100B962E5 /* PerlinAcrossShapes.swift in Sources */,
+				FA64F09F26A251BC007D3D31 /* ColorFromImages.swift in Sources */,
 				FA8C860B269BD5030008AFB1 /* ColorSpectrumGrid.swift in Sources */,
 				FA1C1D69269EA822002BF120 /* RGBInterpolation.swift in Sources */,
 				FA0F141B269421DE00B962E5 /* AcrossComplementaryShapes.swift in Sources */,
