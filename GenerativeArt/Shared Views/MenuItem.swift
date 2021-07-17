@@ -12,7 +12,7 @@ struct MenuItem: View {
     var creationDate: String
     
     var body: some View {
-        VStack {
+        VStack(alignment: .leading) {
             Text(title)
             Text(creationDate)
                 .font(.footnote)
