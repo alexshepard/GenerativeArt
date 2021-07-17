@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ColorFromImages: View {
     public static let name = "Color palettes from images"
-    public static let date = "116 July 2021"
+    public static let date = "16 July 2021"
     
     private let images = ["IMG_4113", "IMG_4115", "IMG_4117"]
     @State private var selectedImage = 0
