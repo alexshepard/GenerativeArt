@@ -19,6 +19,7 @@
 		FA4494A62694CFFE00892772 /* GenerativeDesignBookMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4494A52694CFFE00892772 /* GenerativeDesignBookMenu.swift */; };
 		FA4494A92694D01800892772 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4494A82694D01800892772 /* MenuItem.swift */; };
 		FA64F09F26A251BC007D3D31 /* ColorFromImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA64F09E26A251BB007D3D31 /* ColorFromImages.swift */; };
+		FA64F0A126A26248007D3D31 /* ColorFromCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA64F0A026A26248007D3D31 /* ColorFromCamera.swift */; };
 		FA8C8609269BCA260008AFB1 /* HelloColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8C8608269BCA260008AFB1 /* HelloColor.swift */; };
 		FA8C860B269BD5030008AFB1 /* ColorSpectrumGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8C860A269BD5030008AFB1 /* ColorSpectrumGrid.swift */; };
 		FA8C860D269BE5D70008AFB1 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8C860C269BE5D70008AFB1 /* Extensions.swift */; };
@@ -40,6 +41,8 @@
 		FA4494A52694CFFE00892772 /* GenerativeDesignBookMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerativeDesignBookMenu.swift; sourceTree = "<group>"; };
 		FA4494A82694D01800892772 /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
 		FA64F09E26A251BB007D3D31 /* ColorFromImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorFromImages.swift; sourceTree = "<group>"; };
+		FA64F0A026A26248007D3D31 /* ColorFromCamera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorFromCamera.swift; sourceTree = "<group>"; };
+		FA64F0A226A27B61007D3D31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		FA8C8608269BCA260008AFB1 /* HelloColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloColor.swift; sourceTree = "<group>"; };
 		FA8C860A269BD5030008AFB1 /* ColorSpectrumGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSpectrumGrid.swift; sourceTree = "<group>"; };
 		FA8C860C269BE5D70008AFB1 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
@@ -77,6 +80,7 @@
 		FA0F140626941B0400B962E5 /* GenerativeArt */ = {
 			isa = PBXGroup;
 			children = (
+				FA64F0A226A27B61007D3D31 /* Info.plist */,
 				FA8C860C269BE5D70008AFB1 /* Extensions.swift */,
 				FA4494A72694D00800892772 /* Shared Views */,
 				FA4494A02694CF4F00892772 /* My Sketches */,
@@ -142,6 +146,7 @@
 				FAE3D88C269D3CD500170749 /* ColorPaletteInterpolation.swift */,
 				FA1C1D68269EA822002BF120 /* RGBInterpolation.swift */,
 				FA64F09E26A251BB007D3D31 /* ColorFromImages.swift */,
+				FA64F0A026A26248007D3D31 /* ColorFromCamera.swift */,
 			);
 			path = Color;
 			sourceTree = "<group>";
@@ -228,6 +233,7 @@
 				FA0F140826941B0400B962E5 /* GenerativeArtApp.swift in Sources */,
 				FA4494A92694D01800892772 /* MenuItem.swift in Sources */,
 				FA0F141826941B6B00B962E5 /* AcrossShapes.swift in Sources */,
+				FA64F0A126A26248007D3D31 /* ColorFromCamera.swift in Sources */,
 				FAE3D88D269D3CD500170749 /* ColorPaletteInterpolation.swift in Sources */,
 				FA8C860D269BE5D70008AFB1 /* Extensions.swift in Sources */,
 				FA4494A62694CFFE00892772 /* GenerativeDesignBookMenu.swift in Sources */,
@@ -364,6 +370,8 @@
 				DEVELOPMENT_TEAM = N2YEKRS9JS;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GenerativeArt/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Camera art!";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -394,6 +402,8 @@
 				DEVELOPMENT_TEAM = N2YEKRS9JS;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GenerativeArt/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Camera art!";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

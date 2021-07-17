@@ -45,9 +45,10 @@ struct ColorFromImages: View {
                     .clipped()
                 if #available(iOS 15.0, *) {
                     Canvas { context, size in
-                                                
+                        
+                        let colorGridSize = CGSize(width: 40, height: 40)
                         if let uiimage = UIImage(named: images[selectedImage]),
-                           let imageColors = uiimage.allColors()
+                           let imageColors = uiimage.allColors(size: colorGridSize)
                         {
                             let sortedColors = imageColors.sorted { cA, cB in
                                 var hA: CGFloat = 0
@@ -69,8 +70,8 @@ struct ColorFromImages: View {
                                 }
                             }
 
-                            let tileWidth = size.width / 40
-                            let tileHeight = size.height / 40
+                            let tileWidth = size.width / colorGridSize.width
+                            let tileHeight = size.height / colorGridSize.height
                             
                             var colorIdx = 0
                             for y in stride(from: 0, to: size.height, by: tileHeight) {

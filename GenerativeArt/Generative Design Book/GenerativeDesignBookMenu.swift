@@ -48,6 +48,11 @@ struct GenerativeDesignBookMenu: View {
                         MenuItem(title: ColorFromImages.name, creationDate: ColorFromImages.date)
                     }
 
+                    NavigationLink {
+                        ColorFromCamera()
+                    } label: {
+                        MenuItem(title: ColorFromCamera.name, creationDate: ColorFromCamera.date)
+                    }
                 }
             }
             .navigationBarTitle("Generative Design", displayMode: .inline)

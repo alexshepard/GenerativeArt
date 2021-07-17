@@ -41,12 +41,9 @@ extension Comparable {
 
 extension UIImage {
     // adapted from https://christianselig.com/2021/04/efficient-average-color/
-    func allColors() -> [UIColor]? {
+    func allColors(size: CGSize) -> [UIColor]? {
         guard let cgImage = cgImage else { return nil }
-        
-        // resize to 40x40
-        let size = CGSize(width: 40, height: 40)
-        
+                
         let width = Int(size.width)
         let height = Int(size.height)
         
