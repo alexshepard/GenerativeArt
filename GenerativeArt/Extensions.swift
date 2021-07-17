@@ -61,8 +61,8 @@ extension UIImage {
         
         var colors = [UIColor]()
         
-        for x in 0 ..< width {
-            for y in 0 ..< height {
+        for y in 0 ..< height {
+            for x in 0 ..< width {
                 let pixel = pointer[(y * width) + x]
                 let r = red(for: pixel)
                 let g = green(for: pixel)

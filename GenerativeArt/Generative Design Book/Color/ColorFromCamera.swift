@@ -41,7 +41,7 @@ class CameraController: NSObject, ObservableObject {
         captureSession.sessionPreset = .iFrame960x540
         captureSession.commitConfiguration()
         
-        if let backCamera = AVCaptureDevice.default(.builtInWideAngleCamera, for: .video, position: .front) {
+        if let backCamera = AVCaptureDevice.default(.builtInWideAngleCamera, for: .video, position: .back) {
             do {
                 let backCameraInput = try AVCaptureDeviceInput(device: backCamera)
                 if captureSession.canAddInput(backCameraInput) {
@@ -66,6 +66,10 @@ class CameraController: NSObject, ObservableObject {
         if captureSession.canAddOutput(videoOutput) {
             captureSession.addOutput(videoOutput)
         }
+        if let conn = videoOutput.connections.first {
+            conn.videoOrientation = .portrait
+        }
+
     }
 }
 
@@ -73,14 +77,15 @@ extension CameraController: AVCaptureVideoDataOutputSampleBufferDelegate {
     func captureOutput(_ output: AVCaptureOutput, didOutput sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection) {
         if let lastFrame = lastFrame {
             let timeSinceLastFrame = Date().timeIntervalSince(lastFrame)
-            if timeSinceLastFrame < 1/15 {
+            if timeSinceLastFrame < 1/5 {
                 return
             }
         }
         let imageBuffer = CMSampleBufferGetImageBuffer(sampleBuffer)!
         let ciimage = CIImage(cvPixelBuffer: imageBuffer)
+        let cgImage = self.ciContext.createCGImage(ciimage, from: ciimage.extent)
         DispatchQueue.main.async {
-            self.cgImage = self.ciContext.createCGImage(ciimage, from: ciimage.extent)!
+            self.cgImage = cgImage
         }
         lastFrame = Date()
     }
@@ -92,12 +97,16 @@ struct ColorFromCamera: View {
     
     @ObservedObject private var camera = CameraController()
     
+    @State private var sorting = false
+    
     private let sorts = ["hue", "saturation", "brightness"]
     @State private var selectedSort = 0
 
     var body: some View {
         if #available(iOS 15.0, *) {
             VStack {
+                Toggle("Sort Colors", isOn: $sorting)
+                    .padding()
                 Picker("Sort", selection: $selectedSort) {
                     ForEach(0..<sorts.count) { i in
                         Text(sorts[i])
@@ -105,34 +114,41 @@ struct ColorFromCamera: View {
                 }
                 .pickerStyle(.segmented)
                 .padding([.horizontal, .bottom])
+                .disabled(!sorting)
                 
                 Canvas { context, size in
                     
-                    let colorGridSize = CGSize(width: 40, height: 60)
+                    // set this too high and you'll need to clamp the frames processed
+                    // per second in the sample buffer callback above, or swiftui
+                    // will start glitching
+                    let colorGridSize = CGSize(width: 60, height: 100)
                     
                     if let cgImage = camera.cgImage,
                        let imageColors = UIImage(cgImage: cgImage).allColors(size: colorGridSize)
                     {
-                        let sortedColors = imageColors.sorted { cA, cB in
-                            var hA: CGFloat = 0
-                            var sA: CGFloat = 0
-                            var bA: CGFloat = 0
-                            cA.getHue(&hA, saturation: &sA, brightness: &bA, alpha: nil)
-                            
-                            var hB: CGFloat = 0
-                            var sB: CGFloat = 0
-                            var bB: CGFloat = 0
-                            cB.getHue(&hB, saturation: &sB, brightness: &bB, alpha: nil)
-                            
-                            if self.selectedSort == 0 {
-                                return hA > hB
-                            } else if self.selectedSort ==  1 {
-                                return sA > sB
-                            } else {
-                                return bA > bB
+                        var colors = imageColors
+                        if sorting {
+                            colors = imageColors.sorted { cA, cB in
+                                var hA: CGFloat = 0
+                                var sA: CGFloat = 0
+                                var bA: CGFloat = 0
+                                cA.getHue(&hA, saturation: &sA, brightness: &bA, alpha: nil)
+                                
+                                var hB: CGFloat = 0
+                                var sB: CGFloat = 0
+                                var bB: CGFloat = 0
+                                cB.getHue(&hB, saturation: &sB, brightness: &bB, alpha: nil)
+                                
+                                if self.selectedSort == 0 {
+                                    return hA > hB
+                                } else if self.selectedSort ==  1 {
+                                    return sA > sB
+                                } else {
+                                    return bA > bB
+                                }
                             }
                         }
-
+                        
                         let tileWidth = size.width / colorGridSize.width
                         let tileHeight = size.height / colorGridSize.height
                         
@@ -140,7 +156,7 @@ struct ColorFromCamera: View {
                         for y in stride(from: 0, to: size.height, by: tileHeight) {
                             for x in stride(from: 0, to: size.width, by: tileWidth) {
                                 let rect = CGRect(x: x, y: y, width: tileWidth, height: tileHeight)
-                                let color = Color(uiColor: sortedColors[colorIdx])
+                                let color = Color(uiColor: colors[colorIdx])
                                 colorIdx += 1
                                 context.stroke(Path(rect), with: .color(color))
                                 context.fill(Path(rect), with: .color(color))
