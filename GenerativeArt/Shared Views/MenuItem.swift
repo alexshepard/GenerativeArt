@@ -12,9 +12,8 @@ struct MenuItem: View {
     var creationDate: String
     
     var body: some View {
-        HStack {
+        VStack {
             Text(title)
-            Spacer()
             Text(creationDate)
                 .font(.footnote)
                 .foregroundColor(.secondary)
