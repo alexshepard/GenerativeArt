@@ -107,6 +107,7 @@
 				FA0F141726941B6B00B962E5 /* AcrossShapes.swift */,
 				FA0F141A269421DE00B962E5 /* AcrossComplementaryShapes.swift */,
 				FA0F141C26942BF100B962E5 /* PerlinAcrossShapes.swift */,
+				FA64F0A026A26248007D3D31 /* ColorFromCamera.swift */,
 			);
 			path = "July 2021";
 			sourceTree = "<group>";
@@ -146,7 +147,6 @@
 				FAE3D88C269D3CD500170749 /* ColorPaletteInterpolation.swift */,
 				FA1C1D68269EA822002BF120 /* RGBInterpolation.swift */,
 				FA64F09E26A251BB007D3D31 /* ColorFromImages.swift */,
-				FA64F0A026A26248007D3D31 /* ColorFromCamera.swift */,
 			);
 			path = Color;
 			sourceTree = "<group>";

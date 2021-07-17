@@ -27,6 +27,13 @@ struct MySketchesMenu: View {
                     } label: {
                         MenuItem(title: PerlinAcrossShapes.name, creationDate: PerlinAcrossShapes.date)
                     }
+                    
+                    NavigationLink {
+                        ColorFromCamera()
+                    } label: {
+                        MenuItem(title: ColorFromCamera.name, creationDate: ColorFromCamera.date)
+                    }
+
                 }
             }
             .navigationBarTitle("My Sketches", displayMode: .inline)
