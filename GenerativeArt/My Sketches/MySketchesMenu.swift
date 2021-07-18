@@ -33,6 +33,12 @@ struct MySketchesMenu: View {
                     } label: {
                         MenuItem(title: ColorFromCamera.name, creationDate: ColorFromCamera.date)
                     }
+                    
+                    NavigationLink {
+                        AnimatedAcrossShapes()
+                    } label: {
+                        MenuItem(title: AnimatedAcrossShapes.name, creationDate: AnimatedAcrossShapes.date)
+                    }
 
                 }
             }
