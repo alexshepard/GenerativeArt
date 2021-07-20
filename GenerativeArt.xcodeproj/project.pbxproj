@@ -21,6 +21,7 @@
 		FA4494A92694D01800892772 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4494A82694D01800892772 /* MenuItem.swift */; };
 		FA64F09F26A251BC007D3D31 /* ColorFromImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA64F09E26A251BB007D3D31 /* ColorFromImages.swift */; };
 		FA64F0A126A26248007D3D31 /* ColorFromCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA64F0A026A26248007D3D31 /* ColorFromCamera.swift */; };
+		FA68490C26A5197400EA8A0F /* ColorRules.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA68490B26A5197400EA8A0F /* ColorRules.swift */; };
 		FA8C8609269BCA260008AFB1 /* HelloColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8C8608269BCA260008AFB1 /* HelloColor.swift */; };
 		FA8C860B269BD5030008AFB1 /* ColorSpectrumGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8C860A269BD5030008AFB1 /* ColorSpectrumGrid.swift */; };
 		FA8C860D269BE5D70008AFB1 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8C860C269BE5D70008AFB1 /* Extensions.swift */; };
@@ -45,6 +46,8 @@
 		FA64F09E26A251BB007D3D31 /* ColorFromImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorFromImages.swift; sourceTree = "<group>"; };
 		FA64F0A026A26248007D3D31 /* ColorFromCamera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorFromCamera.swift; sourceTree = "<group>"; };
 		FA64F0A226A27B61007D3D31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		FA68490B26A5197400EA8A0F /* ColorRules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorRules.swift; sourceTree = "<group>"; };
+		FA68490D26A5D87F00EA8A0F /* GenerativeArt.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GenerativeArt.entitlements; sourceTree = "<group>"; };
 		FA8C8608269BCA260008AFB1 /* HelloColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloColor.swift; sourceTree = "<group>"; };
 		FA8C860A269BD5030008AFB1 /* ColorSpectrumGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSpectrumGrid.swift; sourceTree = "<group>"; };
 		FA8C860C269BE5D70008AFB1 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
@@ -82,6 +85,7 @@
 		FA0F140626941B0400B962E5 /* GenerativeArt */ = {
 			isa = PBXGroup;
 			children = (
+				FA68490D26A5D87F00EA8A0F /* GenerativeArt.entitlements */,
 				FA64F0A226A27B61007D3D31 /* Info.plist */,
 				FA8C860C269BE5D70008AFB1 /* Extensions.swift */,
 				FA4494A72694D00800892772 /* Shared Views */,
@@ -150,6 +154,7 @@
 				FAE3D88C269D3CD500170749 /* ColorPaletteInterpolation.swift */,
 				FA1C1D68269EA822002BF120 /* RGBInterpolation.swift */,
 				FA64F09E26A251BB007D3D31 /* ColorFromImages.swift */,
+				FA68490B26A5197400EA8A0F /* ColorRules.swift */,
 			);
 			path = Color;
 			sourceTree = "<group>";
@@ -229,6 +234,7 @@
 				FA4494A42694CF9300892772 /* MainMenu.swift in Sources */,
 				FA8C8609269BCA260008AFB1 /* HelloColor.swift in Sources */,
 				FA0F141D26942BF100B962E5 /* PerlinAcrossShapes.swift in Sources */,
+				FA68490C26A5197400EA8A0F /* ColorRules.swift in Sources */,
 				FA64F09F26A251BC007D3D31 /* ColorFromImages.swift in Sources */,
 				FA8C860B269BD5030008AFB1 /* ColorSpectrumGrid.swift in Sources */,
 				FA1C1D69269EA822002BF120 /* RGBInterpolation.swift in Sources */,
@@ -368,6 +374,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = GenerativeArt/GenerativeArt.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"GenerativeArt/Preview Content\"";
@@ -381,7 +388,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -389,6 +396,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.meatfreezer.GenerativeArt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -400,6 +408,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = GenerativeArt/GenerativeArt.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"GenerativeArt/Preview Content\"";
@@ -413,7 +422,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -421,6 +430,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.meatfreezer.GenerativeArt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

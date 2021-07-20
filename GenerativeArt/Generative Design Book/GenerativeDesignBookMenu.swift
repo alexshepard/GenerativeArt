@@ -47,6 +47,12 @@ struct GenerativeDesignBookMenu: View {
                     } label: {
                         MenuItem(title: ColorFromImages.name, creationDate: ColorFromImages.date)
                     }
+                    
+                    NavigationLink {
+                        ColorRules()
+                    } label: {
+                        MenuItem(title: ColorRules.name, creationDate: ColorRules.date)
+                    }
 
                 }
             }
