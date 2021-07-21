@@ -53,6 +53,19 @@ struct GenerativeDesignBookMenu: View {
                     } label: {
                         MenuItem(title: ColorRules.name, creationDate: ColorRules.date)
                     }
+                    
+                    NavigationLink {
+                        ColorRulesTransparent()
+                    } label: {
+                        MenuItem(title: ColorRulesTransparent.name, creationDate: ColorRulesTransparent.date)
+                    }
+
+                    NavigationLink {
+                        ColorRulesDropout()
+                    } label: {
+                        MenuItem(title: ColorRulesDropout.name, creationDate: ColorRulesDropout.date)
+                    }
+
 
                 }
             }

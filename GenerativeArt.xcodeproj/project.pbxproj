@@ -22,10 +22,12 @@
 		FA64F09F26A251BC007D3D31 /* ColorFromImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA64F09E26A251BB007D3D31 /* ColorFromImages.swift */; };
 		FA64F0A126A26248007D3D31 /* ColorFromCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA64F0A026A26248007D3D31 /* ColorFromCamera.swift */; };
 		FA68490C26A5197400EA8A0F /* ColorRules.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA68490B26A5197400EA8A0F /* ColorRules.swift */; };
+		FA76C33B26A699E800068735 /* ColorRulesTransparent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA76C33A26A699E800068735 /* ColorRulesTransparent.swift */; };
 		FA8C8609269BCA260008AFB1 /* HelloColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8C8608269BCA260008AFB1 /* HelloColor.swift */; };
 		FA8C860B269BD5030008AFB1 /* ColorSpectrumGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8C860A269BD5030008AFB1 /* ColorSpectrumGrid.swift */; };
 		FA8C860D269BE5D70008AFB1 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8C860C269BE5D70008AFB1 /* Extensions.swift */; };
 		FA8C8610269BE8430008AFB1 /* ColorSpectrumCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8C860F269BE8430008AFB1 /* ColorSpectrumCircle.swift */; };
+		FAA30F8726A7CCC200F1F3E7 /* ColorRulesDropout.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA30F8626A7CCC200F1F3E7 /* ColorRulesDropout.swift */; };
 		FAE3D88D269D3CD500170749 /* ColorPaletteInterpolation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE3D88C269D3CD500170749 /* ColorPaletteInterpolation.swift */; };
 /* End PBXBuildFile section */
 
@@ -48,10 +50,12 @@
 		FA64F0A226A27B61007D3D31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		FA68490B26A5197400EA8A0F /* ColorRules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorRules.swift; sourceTree = "<group>"; };
 		FA68490D26A5D87F00EA8A0F /* GenerativeArt.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GenerativeArt.entitlements; sourceTree = "<group>"; };
+		FA76C33A26A699E800068735 /* ColorRulesTransparent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorRulesTransparent.swift; sourceTree = "<group>"; };
 		FA8C8608269BCA260008AFB1 /* HelloColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloColor.swift; sourceTree = "<group>"; };
 		FA8C860A269BD5030008AFB1 /* ColorSpectrumGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSpectrumGrid.swift; sourceTree = "<group>"; };
 		FA8C860C269BE5D70008AFB1 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		FA8C860F269BE8430008AFB1 /* ColorSpectrumCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSpectrumCircle.swift; sourceTree = "<group>"; };
+		FAA30F8626A7CCC200F1F3E7 /* ColorRulesDropout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorRulesDropout.swift; sourceTree = "<group>"; };
 		FAE3D88C269D3CD500170749 /* ColorPaletteInterpolation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPaletteInterpolation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -155,6 +159,8 @@
 				FA1C1D68269EA822002BF120 /* RGBInterpolation.swift */,
 				FA64F09E26A251BB007D3D31 /* ColorFromImages.swift */,
 				FA68490B26A5197400EA8A0F /* ColorRules.swift */,
+				FA76C33A26A699E800068735 /* ColorRulesTransparent.swift */,
+				FAA30F8626A7CCC200F1F3E7 /* ColorRulesDropout.swift */,
 			);
 			path = Color;
 			sourceTree = "<group>";
@@ -236,7 +242,9 @@
 				FA0F141D26942BF100B962E5 /* PerlinAcrossShapes.swift in Sources */,
 				FA68490C26A5197400EA8A0F /* ColorRules.swift in Sources */,
 				FA64F09F26A251BC007D3D31 /* ColorFromImages.swift in Sources */,
+				FA76C33B26A699E800068735 /* ColorRulesTransparent.swift in Sources */,
 				FA8C860B269BD5030008AFB1 /* ColorSpectrumGrid.swift in Sources */,
+				FAA30F8726A7CCC200F1F3E7 /* ColorRulesDropout.swift in Sources */,
 				FA1C1D69269EA822002BF120 /* RGBInterpolation.swift in Sources */,
 				FA0F141B269421DE00B962E5 /* AcrossComplementaryShapes.swift in Sources */,
 				FA0F140826941B0400B962E5 /* GenerativeArtApp.swift in Sources */,
