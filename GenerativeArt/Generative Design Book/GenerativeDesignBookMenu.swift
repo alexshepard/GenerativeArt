@@ -65,9 +65,21 @@ struct GenerativeDesignBookMenu: View {
                     } label: {
                         MenuItem(title: ColorRulesDropout.name, creationDate: ColorRulesDropout.date)
                     }
-
+                }
+                Section("Chapter Two: Shape") {
+                    NavigationLink {
+                        HelloShape()
+                    } label: {
+                        MenuItem(title: HelloShape.name, creationDate: HelloShape.date)
+                    }
+                    NavigationLink {
+                        AlignmentGrid()
+                    } label: {
+                        MenuItem(title: AlignmentGrid.name, creationDate: AlignmentGrid.date)
+                    }
 
                 }
+
             }
             .navigationBarTitle("Generative Design", displayMode: .inline)
         } else {
