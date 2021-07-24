@@ -77,7 +77,11 @@ struct GenerativeDesignBookMenu: View {
                     } label: {
                         MenuItem(title: AlignmentGrid.name, creationDate: AlignmentGrid.date)
                     }
-
+                    NavigationLink {
+                        AlignmentGridColor()
+                    } label: {
+                        MenuItem(title: AlignmentGridColor.name, creationDate: AlignmentGridColor.date)
+                    }
                 }
 
             }
