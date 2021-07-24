@@ -18,7 +18,7 @@ struct AlignmentGrid: View {
     @State private var lineWidthA: CGFloat = 5
     @State private var lineWidthB: CGFloat = 5
      
-    func strokeCap(for value: Int) -> CGLineCap {
+    private func strokeCap(for value: Int) -> CGLineCap {
         if value == 0 {
             return .round
         } else if value == 1 {
