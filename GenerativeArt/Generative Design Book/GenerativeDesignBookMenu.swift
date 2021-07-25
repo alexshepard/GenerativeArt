@@ -12,80 +12,65 @@ struct GenerativeDesignBookMenu: View {
         if #available(iOS 15.0, *) {
             List {
                 Section("Chapter One: Colors") {
-                    NavigationLink {
-                        HelloColor()
-                    } label: {
-                        MenuItem(title: HelloColor.name, creationDate: HelloColor.date)
-                    }
-                    
-                    NavigationLink {
-                        ColorSpectrumGrid()
-                    } label: {
-                        MenuItem(title: ColorSpectrumGrid.name, creationDate: ColorSpectrumGrid.date)
-                    }
-                    
-                    NavigationLink {
-                        ColorSpectrumCircle()
-                    } label: {
-                        MenuItem(title: ColorSpectrumCircle.name, creationDate: ColorSpectrumCircle.date)
-                    }
-                    
-                    NavigationLink {
-                        ColorPaletteInterpolation()
-                    } label: {
-                        MenuItem(title: ColorPaletteInterpolation.name, creationDate: ColorPaletteInterpolation.date)
-                    }
+                    MenuItem(view: AnyView(HelloColor()),
+                             title: HelloColor.name,
+                             creationDate: HelloColor.date)
 
-                    NavigationLink {
-                        RGBInterpolation()
-                    } label: {
-                        MenuItem(title: RGBInterpolation.name, creationDate: RGBInterpolation.date)
-                    }
-                    
-                    NavigationLink {
-                        ColorFromImages()
-                    } label: {
-                        MenuItem(title: ColorFromImages.name, creationDate: ColorFromImages.date)
-                    }
-                    
-                    NavigationLink {
-                        ColorRules()
-                    } label: {
-                        MenuItem(title: ColorRules.name, creationDate: ColorRules.date)
-                    }
-                    
-                    NavigationLink {
-                        ColorRulesTransparent()
-                    } label: {
-                        MenuItem(title: ColorRulesTransparent.name, creationDate: ColorRulesTransparent.date)
-                    }
+                    MenuItem(view: AnyView(ColorSpectrumGrid()),
+                             title: ColorSpectrumGrid.name,
+                             creationDate: ColorSpectrumGrid.date)
 
-                    NavigationLink {
-                        ColorRulesDropout()
-                    } label: {
-                        MenuItem(title: ColorRulesDropout.name, creationDate: ColorRulesDropout.date)
-                    }
+                    MenuItem(view: AnyView(ColorSpectrumCircle()),
+                             title: ColorSpectrumCircle.name,
+                             creationDate: ColorSpectrumCircle.date)
+
+                    MenuItem(view: AnyView(ColorPaletteInterpolation()),
+                             title: ColorPaletteInterpolation.name,
+                             creationDate: ColorPaletteInterpolation.date)
+
+                    MenuItem(view: AnyView(RGBInterpolation()),
+                             title: RGBInterpolation.name,
+                             creationDate: RGBInterpolation.date)
+
+                    MenuItem(view: AnyView(ColorFromImages()),
+                             title: ColorFromImages.name,
+                             creationDate: ColorFromImages.date)
+
+                    MenuItem(view: AnyView(ColorRules()),
+                             title: ColorRules.name,
+                             creationDate: ColorRules.date)
+
+                    MenuItem(view: AnyView(ColorRulesTransparent()),
+                             title: ColorRulesTransparent.name,
+                             creationDate: ColorRulesTransparent.date)
+
+                    MenuItem(view: AnyView(ColorRulesDropout()),
+                             title: ColorRulesDropout.name,
+                             creationDate: ColorRulesDropout.date)
+
                 }
                 Section("Chapter Two: Shape") {
-                    NavigationLink {
-                        HelloShape()
-                    } label: {
-                        MenuItem(title: HelloShape.name, creationDate: HelloShape.date)
-                    }
-                    NavigationLink {
-                        AlignmentGrid()
-                    } label: {
-                        MenuItem(title: AlignmentGrid.name, creationDate: AlignmentGrid.date)
-                    }
-                    NavigationLink {
-                        AlignmentGridColor()
-                    } label: {
-                        MenuItem(title: AlignmentGridColor.name, creationDate: AlignmentGridColor.date)
-                    }
-                }
+                    
+                    MenuItem(view: AnyView(HelloShape()),
+                             title: HelloShape.name,
+                             creationDate: HelloShape.date)
 
+                    MenuItem(view: AnyView(AlignmentGrid()),
+                             title: AlignmentGrid.name,
+                             creationDate: AlignmentGrid.date)
+
+                    MenuItem(view: AnyView(AlignmentGridColor()),
+                             title: AlignmentGridColor.name,
+                             creationDate: AlignmentGridColor.date)
+
+                    MenuItem(view: AnyView(AlignmentGridSymbols()),
+                             title: AlignmentGridSymbols.name,
+                             creationDate: AlignmentGridSymbols.date)
+                    
+                }
             }
             .navigationBarTitle("Generative Design", displayMode: .inline)
+            .listStyle(.sidebar)
         } else {
             Text("iOS 14 Fallback view")
         }

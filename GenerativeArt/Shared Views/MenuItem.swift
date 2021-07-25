@@ -7,22 +7,30 @@
 
 import SwiftUI
 
+
+
 struct MenuItem: View {
+    var view: AnyView
     var title: String
     var creationDate: String
     
     var body: some View {
-        VStack(alignment: .leading) {
-            Text(title)
-            Text(creationDate)
-                .font(.footnote)
-                .foregroundColor(.secondary)
+        NavigationLink {
+            view
+        } label: {
+            VStack(alignment: .leading) {
+                Text(title)
+                Text(creationDate)
+                    .font(.footnote)
+                    .foregroundColor(.secondary)
+            }
         }
+
     }
 }
 
 struct MenuItem_Previews: PreviewProvider {
     static var previews: some View {
-        MenuItem(title: "Test", creationDate: "Some Date")
+        MenuItem(view: AnyView(Text("")), title: "Test", creationDate: "Some Date")
     }
 }

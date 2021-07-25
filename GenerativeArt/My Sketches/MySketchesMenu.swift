@@ -12,33 +12,29 @@ struct MySketchesMenu: View {
         if #available(iOS 15.0, *) {
             List {
                 Section("July 2021") {
-                    NavigationLink {
-                        AcrossShapes()
-                    } label: {
-                        MenuItem(title: AcrossShapes.name, creationDate: AcrossShapes.date)
-                    }
-                    NavigationLink {
-                        AcrossComplementaryShapes()
-                    } label: {
-                        MenuItem(title: AcrossComplementaryShapes.name, creationDate: AcrossComplementaryShapes.date)
-                    }
-                    NavigationLink {
-                        PerlinAcrossShapes()
-                    } label: {
-                        MenuItem(title: PerlinAcrossShapes.name, creationDate: PerlinAcrossShapes.date)
-                    }
+                    MenuItem(view: AnyView(AcrossShapes()),
+                             title: AcrossShapes.name,
+                             creationDate: AcrossShapes.date)
                     
-                    NavigationLink {
-                        ColorFromCamera()
-                    } label: {
-                        MenuItem(title: ColorFromCamera.name, creationDate: ColorFromCamera.date)
-                    }
+                    MenuItem(view: AnyView(AcrossComplementaryShapes()),
+                             title: AcrossComplementaryShapes.name,
+                             creationDate: AcrossComplementaryShapes.date)
+
+                    MenuItem(view: AnyView(PerlinAcrossShapes()),
+                             title: PerlinAcrossShapes.name,
+                             creationDate: PerlinAcrossShapes.date)
                     
-                    NavigationLink {
-                        AnimatedAcrossShapes()
-                    } label: {
-                        MenuItem(title: AnimatedAcrossShapes.name, creationDate: AnimatedAcrossShapes.date)
-                    }
+                    MenuItem(view: AnyView(ColorFromCamera()),
+                             title: ColorFromCamera.name,
+                             creationDate: ColorFromCamera.date)
+
+                    MenuItem(view: AnyView(AnimatedAcrossShapes()),
+                             title: AnimatedAcrossShapes.name,
+                             creationDate: AnimatedAcrossShapes.date)
+                    
+                    MenuItem(view: AnyView(RotatingGrid()),
+                             title: RotatingGrid.name,
+                             creationDate: RotatingGrid.date)
 
                 }
             }
