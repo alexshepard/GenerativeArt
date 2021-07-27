@@ -17,6 +17,8 @@
 		FA1C1D69269EA822002BF120 /* RGBInterpolation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1C1D68269EA822002BF120 /* RGBInterpolation.swift */; };
 		FA28CB5426A4AEC2000E1E63 /* AnimatedAcrossShapes.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA28CB5326A4AEC2000E1E63 /* AnimatedAcrossShapes.swift */; };
 		FA3920C426AF4F5C004157B6 /* MovementGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3920C326AF4F5C004157B6 /* MovementGrid.swift */; };
+		FA3920CE26AFA3F4004157B6 /* MovementGridUnder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3920CD26AFA3F4004157B6 /* MovementGridUnder.swift */; };
+		FA3920D126AFAD21004157B6 /* ArbitraryRandomNumberGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3920D026AFAD21004157B6 /* ArbitraryRandomNumberGenerator.swift */; };
 		FA3BD5DA26AB17160050DA92 /* AlignmentGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3BD5D926AB17160050DA92 /* AlignmentGrid.swift */; };
 		FA3FF8EF26ADDF4D007336D5 /* RotatingGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3FF8EE26ADDF4D007336D5 /* RotatingGrid.swift */; };
 		FA4494A42694CF9300892772 /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4494A32694CF9300892772 /* MainMenu.swift */; };
@@ -49,6 +51,8 @@
 		FA1C1D68269EA822002BF120 /* RGBInterpolation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RGBInterpolation.swift; sourceTree = "<group>"; };
 		FA28CB5326A4AEC2000E1E63 /* AnimatedAcrossShapes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedAcrossShapes.swift; sourceTree = "<group>"; };
 		FA3920C326AF4F5C004157B6 /* MovementGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovementGrid.swift; sourceTree = "<group>"; };
+		FA3920CD26AFA3F4004157B6 /* MovementGridUnder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovementGridUnder.swift; sourceTree = "<group>"; };
+		FA3920D026AFAD21004157B6 /* ArbitraryRandomNumberGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArbitraryRandomNumberGenerator.swift; sourceTree = "<group>"; };
 		FA3BD5D926AB17160050DA92 /* AlignmentGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlignmentGrid.swift; sourceTree = "<group>"; };
 		FA3FF8EE26ADDF4D007336D5 /* RotatingGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotatingGrid.swift; sourceTree = "<group>"; };
 		FA4494A32694CF9300892772 /* MainMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenu.swift; sourceTree = "<group>"; };
@@ -101,6 +105,7 @@
 		FA0F140626941B0400B962E5 /* GenerativeArt */ = {
 			isa = PBXGroup;
 			children = (
+				FA3920CF26AFAD11004157B6 /* Utilities */,
 				FA68490D26A5D87F00EA8A0F /* GenerativeArt.entitlements */,
 				FA64F0A226A27B61007D3D31 /* Info.plist */,
 				FA8C860C269BE5D70008AFB1 /* Extensions.swift */,
@@ -134,6 +139,14 @@
 				FA3FF8EE26ADDF4D007336D5 /* RotatingGrid.swift */,
 			);
 			path = "July 2021";
+			sourceTree = "<group>";
+		};
+		FA3920CF26AFAD11004157B6 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				FA3920D026AFAD21004157B6 /* ArbitraryRandomNumberGenerator.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 		FA44949F2694CD8500892772 /* Generative Design Book */ = {
@@ -187,6 +200,7 @@
 				FAA8FDA726ABBCC30000D195 /* AlignmentGridColor.swift */,
 				FAA8FDA926ABC15D0000D195 /* AlignmentGridSymbols.swift */,
 				FA3920C326AF4F5C004157B6 /* MovementGrid.swift */,
+				FA3920CD26AFA3F4004157B6 /* MovementGridUnder.swift */,
 			);
 			path = Shape;
 			sourceTree = "<group>";
@@ -262,6 +276,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA8C8610269BE8430008AFB1 /* ColorSpectrumCircle.swift in Sources */,
+				FA3920CE26AFA3F4004157B6 /* MovementGridUnder.swift in Sources */,
 				FA0F141626941B1400B962E5 /* MySketchesMenu.swift in Sources */,
 				FA4494A42694CF9300892772 /* MainMenu.swift in Sources */,
 				FA8C8609269BCA260008AFB1 /* HelloColor.swift in Sources */,
@@ -284,6 +299,7 @@
 				FAA30F8A26A7E25100F1F3E7 /* HelloShape.swift in Sources */,
 				FAA8FDAA26ABC15D0000D195 /* AlignmentGridSymbols.swift in Sources */,
 				FA8C860D269BE5D70008AFB1 /* Extensions.swift in Sources */,
+				FA3920D126AFAD21004157B6 /* ArbitraryRandomNumberGenerator.swift in Sources */,
 				FA28CB5426A4AEC2000E1E63 /* AnimatedAcrossShapes.swift in Sources */,
 				FA4494A62694CFFE00892772 /* GenerativeDesignBookMenu.swift in Sources */,
 				FAA8FDA826ABBCC30000D195 /* AlignmentGridColor.swift in Sources */,

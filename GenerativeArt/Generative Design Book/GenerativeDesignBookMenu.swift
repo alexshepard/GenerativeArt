@@ -70,6 +70,11 @@ struct GenerativeDesignBookMenu: View {
                     MenuItem(view: AnyView(MovementGrid()),
                              title: MovementGrid.name,
                              creationDate: MovementGrid.date)
+                    
+                    MenuItem(view: AnyView(MovementGridUnder()),
+                             title: MovementGridUnder.name,
+                             creationDate: MovementGridUnder.date)
+                    
                 }
             }
             .navigationBarTitle("Generative Design", displayMode: .inline)
