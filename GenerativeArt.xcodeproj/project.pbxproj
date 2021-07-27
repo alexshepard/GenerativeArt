@@ -16,6 +16,7 @@
 		FA0F141D26942BF100B962E5 /* PerlinAcrossShapes.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0F141C26942BF100B962E5 /* PerlinAcrossShapes.swift */; };
 		FA1C1D69269EA822002BF120 /* RGBInterpolation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1C1D68269EA822002BF120 /* RGBInterpolation.swift */; };
 		FA28CB5426A4AEC2000E1E63 /* AnimatedAcrossShapes.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA28CB5326A4AEC2000E1E63 /* AnimatedAcrossShapes.swift */; };
+		FA3920C426AF4F5C004157B6 /* MovementGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3920C326AF4F5C004157B6 /* MovementGrid.swift */; };
 		FA3BD5DA26AB17160050DA92 /* AlignmentGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3BD5D926AB17160050DA92 /* AlignmentGrid.swift */; };
 		FA3FF8EF26ADDF4D007336D5 /* RotatingGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3FF8EE26ADDF4D007336D5 /* RotatingGrid.swift */; };
 		FA4494A42694CF9300892772 /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4494A32694CF9300892772 /* MainMenu.swift */; };
@@ -47,6 +48,7 @@
 		FA0F141C26942BF100B962E5 /* PerlinAcrossShapes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerlinAcrossShapes.swift; sourceTree = "<group>"; };
 		FA1C1D68269EA822002BF120 /* RGBInterpolation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RGBInterpolation.swift; sourceTree = "<group>"; };
 		FA28CB5326A4AEC2000E1E63 /* AnimatedAcrossShapes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedAcrossShapes.swift; sourceTree = "<group>"; };
+		FA3920C326AF4F5C004157B6 /* MovementGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovementGrid.swift; sourceTree = "<group>"; };
 		FA3BD5D926AB17160050DA92 /* AlignmentGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlignmentGrid.swift; sourceTree = "<group>"; };
 		FA3FF8EE26ADDF4D007336D5 /* RotatingGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotatingGrid.swift; sourceTree = "<group>"; };
 		FA4494A32694CF9300892772 /* MainMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenu.swift; sourceTree = "<group>"; };
@@ -184,6 +186,7 @@
 				FA3BD5D926AB17160050DA92 /* AlignmentGrid.swift */,
 				FAA8FDA726ABBCC30000D195 /* AlignmentGridColor.swift */,
 				FAA8FDA926ABC15D0000D195 /* AlignmentGridSymbols.swift */,
+				FA3920C326AF4F5C004157B6 /* MovementGrid.swift */,
 			);
 			path = Shape;
 			sourceTree = "<group>";
@@ -266,6 +269,7 @@
 				FA68490C26A5197400EA8A0F /* ColorRules.swift in Sources */,
 				FA64F09F26A251BC007D3D31 /* ColorFromImages.swift in Sources */,
 				FA76C33B26A699E800068735 /* ColorRulesTransparent.swift in Sources */,
+				FA3920C426AF4F5C004157B6 /* MovementGrid.swift in Sources */,
 				FA3FF8EF26ADDF4D007336D5 /* RotatingGrid.swift in Sources */,
 				FA8C860B269BD5030008AFB1 /* ColorSpectrumGrid.swift in Sources */,
 				FAA30F8726A7CCC200F1F3E7 /* ColorRulesDropout.swift in Sources */,

@@ -67,6 +67,9 @@ struct GenerativeDesignBookMenu: View {
                              title: AlignmentGridSymbols.name,
                              creationDate: AlignmentGridSymbols.date)
                     
+                    MenuItem(view: AnyView(MovementGrid()),
+                             title: MovementGrid.name,
+                             creationDate: MovementGrid.date)
                 }
             }
             .navigationBarTitle("Generative Design", displayMode: .inline)
