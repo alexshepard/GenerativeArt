@@ -13,9 +13,29 @@ struct ComplexModules: View, Sketch {
 
     @State private var touchLocation: CGPoint = .zero
     @State private var seed: Int = 941
+    
+    private var blendModes = ["normal", "screen", "darken"]
+    @State private var blendMode = 0
+    
     var body: some View {
         VStack {
+            Picker("Blend Mode", selection: $blendMode) {
+                ForEach(0..<blendModes.count) {
+                    Text(blendModes[$0])
+                }
+            }
+            .pickerStyle(.segmented)
+            .padding()
+            
             Canvas { context, size in
+                
+                if blendMode == 0 {
+                    context.blendMode = .normal
+                } else if blendMode == 1 {
+                    context.blendMode = .screen
+                } else {
+                    context.blendMode = .darken
+                }
                 
                 var rng = ArbitraryRandomNumberGenerator(seed: UInt64(seed))
                 
