@@ -24,7 +24,7 @@ struct JitterQuad: Shape {
     }
 }
 
-struct JitterQuads: View {
+struct JitterQuads: View, Sketch {
     public static let name = "Jitter Quads"
     public static let date = "28 July 2021"
     

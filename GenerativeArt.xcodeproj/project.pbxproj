@@ -39,6 +39,7 @@
 		FAA8FDA826ABBCC30000D195 /* AlignmentGridColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA8FDA726ABBCC30000D195 /* AlignmentGridColor.swift */; };
 		FAA8FDAA26ABC15D0000D195 /* AlignmentGridSymbols.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA8FDA926ABC15D0000D195 /* AlignmentGridSymbols.swift */; };
 		FAE3D88D269D3CD500170749 /* ColorPaletteInterpolation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE3D88C269D3CD500170749 /* ColorPaletteInterpolation.swift */; };
+		FAEC623626B33A7700A40023 /* ComplexModules.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEC623526B33A7700A40023 /* ComplexModules.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -77,6 +78,7 @@
 		FAA8FDA726ABBCC30000D195 /* AlignmentGridColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlignmentGridColor.swift; sourceTree = "<group>"; };
 		FAA8FDA926ABC15D0000D195 /* AlignmentGridSymbols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlignmentGridSymbols.swift; sourceTree = "<group>"; };
 		FAE3D88C269D3CD500170749 /* ColorPaletteInterpolation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPaletteInterpolation.swift; sourceTree = "<group>"; };
+		FAEC623526B33A7700A40023 /* ComplexModules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplexModules.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -207,6 +209,7 @@
 				FA3920CD26AFA3F4004157B6 /* MovementGridUnder.swift */,
 				FA6A610026B10D21001D1493 /* RadGrid.swift */,
 				FA7A4E4026B2847200833D83 /* Quadrilaterals.swift */,
+				FAEC623526B33A7700A40023 /* ComplexModules.swift */,
 			);
 			path = Shape;
 			sourceTree = "<group>";
@@ -290,6 +293,7 @@
 				FA68490C26A5197400EA8A0F /* ColorRules.swift in Sources */,
 				FA64F09F26A251BC007D3D31 /* ColorFromImages.swift in Sources */,
 				FA76C33B26A699E800068735 /* ColorRulesTransparent.swift in Sources */,
+				FAEC623626B33A7700A40023 /* ComplexModules.swift in Sources */,
 				FA3920C426AF4F5C004157B6 /* MovementGrid.swift in Sources */,
 				FA3FF8EF26ADDF4D007336D5 /* RotatingGrid.swift in Sources */,
 				FA8C860B269BD5030008AFB1 /* ColorSpectrumGrid.swift in Sources */,

@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ColorFromImages: View {
+struct ColorFromImages: View, Sketch {
     public static let name = "Color palettes from images"
     public static let date = "16 July 2021"
     

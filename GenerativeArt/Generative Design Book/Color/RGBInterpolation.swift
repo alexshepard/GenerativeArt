@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct RGBInterpolation: View {
+struct RGBInterpolation: View, Sketch {
     public static let name = "Color palettes through RGB interpolation"
     public static let date = "13 July 2021"
     

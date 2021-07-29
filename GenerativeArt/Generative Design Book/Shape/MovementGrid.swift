@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct MovementGrid: View {
+struct MovementGrid: View, Sketch {
     public static let name = "Movement in a grid"
     public static let date = "25 July 2021"
     

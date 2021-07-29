@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ColorSpectrumGrid: View {
+struct ColorSpectrumGrid: View, Sketch {
     public static let name = "Color spectrum in a grid"
     public static let date = "11 July 2021"
     

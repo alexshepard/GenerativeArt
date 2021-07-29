@@ -9,7 +9,7 @@ import SwiftUI
 
 
 
-struct ColorRules: View {
+struct ColorRules: View, Sketch {
     public static let name = "Color palettes from rules"
     public static let date = "18 July 2021"
     

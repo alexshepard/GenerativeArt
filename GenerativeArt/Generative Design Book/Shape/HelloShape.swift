@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct HelloShape: View {
+struct HelloShape: View, Sketch {
     public static let name = "Hello, shape"
     public static let date = "20 July 2021"
     

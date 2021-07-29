@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct AlignmentGrid: View {
+struct AlignmentGrid: View, Sketch {
     public static let name = "Alignment in a grid"
     public static let date = "22 July 2021"
     

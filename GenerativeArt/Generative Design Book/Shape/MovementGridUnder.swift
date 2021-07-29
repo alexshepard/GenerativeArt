@@ -9,7 +9,7 @@ import SwiftUI
 
 import GameplayKit
 
-struct MovementGridUnder: View {
+struct MovementGridUnder: View, Sketch {
     public static let name = "Movement in a grid, under"
     public static let date = "26 July 2021"
     

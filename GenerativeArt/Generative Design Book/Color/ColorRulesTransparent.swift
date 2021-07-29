@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ColorRulesTransparent: View {
+struct ColorRulesTransparent: View, Sketch {
     public static let name = "Color palettes from rules, transparent"
     public static let date = "19 July 2021"
 

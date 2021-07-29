@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ColorRulesDropout: View {
+struct ColorRulesDropout: View, Sketch {
     public static let name = "Color palettes from rules, dropout"
     public static let date = "20 July 2021"
 

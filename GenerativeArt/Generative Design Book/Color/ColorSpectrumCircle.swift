@@ -8,7 +8,7 @@
 import SwiftUI
 import ModelIO
 
-struct ColorSpectrumCircle: View {
+struct ColorSpectrumCircle: View, Sketch {
     public static let name = "Color spectrum in a circle"
     public static let date = "11 July 2021"
 

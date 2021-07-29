@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct RadGrid: View {
+struct RadGrid: View, Sketch {
     public static let name = "Rad grid"
     public static let date = "27 July 2021"
     
