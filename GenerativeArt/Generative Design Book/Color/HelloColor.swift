@@ -10,7 +10,7 @@ import SwiftUI
 struct HelloColor: View, Sketch {
     public static let name = "Hello, color"
     public static let date = "11 July 2021"
-
+    
     @State private var fgColor: Color = .white
     @State private var bgColor: Color = .white
     @State private var rectSideLength: CGFloat = 0

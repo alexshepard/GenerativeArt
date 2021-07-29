@@ -28,7 +28,6 @@ struct ComplexModules: View, Sketch {
             .padding()
             
             Canvas { context, size in
-                
                 if blendMode == 0 {
                     context.blendMode = .normal
                 } else if blendMode == 1 {
