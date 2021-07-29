@@ -29,6 +29,7 @@
 		FA68490C26A5197400EA8A0F /* ColorRules.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA68490B26A5197400EA8A0F /* ColorRules.swift */; };
 		FA6A610126B10D21001D1493 /* RadGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6A610026B10D21001D1493 /* RadGrid.swift */; };
 		FA76C33B26A699E800068735 /* ColorRulesTransparent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA76C33A26A699E800068735 /* ColorRulesTransparent.swift */; };
+		FA7A4E4126B2847200833D83 /* Quadrilaterals.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7A4E4026B2847200833D83 /* Quadrilaterals.swift */; };
 		FA8C8609269BCA260008AFB1 /* HelloColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8C8608269BCA260008AFB1 /* HelloColor.swift */; };
 		FA8C860B269BD5030008AFB1 /* ColorSpectrumGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8C860A269BD5030008AFB1 /* ColorSpectrumGrid.swift */; };
 		FA8C860D269BE5D70008AFB1 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8C860C269BE5D70008AFB1 /* Extensions.swift */; };
@@ -66,6 +67,7 @@
 		FA68490D26A5D87F00EA8A0F /* GenerativeArt.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GenerativeArt.entitlements; sourceTree = "<group>"; };
 		FA6A610026B10D21001D1493 /* RadGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadGrid.swift; sourceTree = "<group>"; };
 		FA76C33A26A699E800068735 /* ColorRulesTransparent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorRulesTransparent.swift; sourceTree = "<group>"; };
+		FA7A4E4026B2847200833D83 /* Quadrilaterals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quadrilaterals.swift; sourceTree = "<group>"; };
 		FA8C8608269BCA260008AFB1 /* HelloColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloColor.swift; sourceTree = "<group>"; };
 		FA8C860A269BD5030008AFB1 /* ColorSpectrumGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSpectrumGrid.swift; sourceTree = "<group>"; };
 		FA8C860C269BE5D70008AFB1 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
@@ -204,6 +206,7 @@
 				FA3920C326AF4F5C004157B6 /* MovementGrid.swift */,
 				FA3920CD26AFA3F4004157B6 /* MovementGridUnder.swift */,
 				FA6A610026B10D21001D1493 /* RadGrid.swift */,
+				FA7A4E4026B2847200833D83 /* Quadrilaterals.swift */,
 			);
 			path = Shape;
 			sourceTree = "<group>";
@@ -307,6 +310,7 @@
 				FA28CB5426A4AEC2000E1E63 /* AnimatedAcrossShapes.swift in Sources */,
 				FA4494A62694CFFE00892772 /* GenerativeDesignBookMenu.swift in Sources */,
 				FAA8FDA826ABBCC30000D195 /* AlignmentGridColor.swift in Sources */,
+				FA7A4E4126B2847200833D83 /* Quadrilaterals.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

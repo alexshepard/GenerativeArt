@@ -79,6 +79,10 @@ struct GenerativeDesignBookMenu: View {
                              title: RadGrid.name,
                              creationDate: RadGrid.date)
                     
+                    MenuItem(view: AnyView(JitterQuads()),
+                             title: JitterQuads.name,
+                             creationDate: JitterQuads.date)
+                    
                 }
             }
             .navigationBarTitle("Generative Design", displayMode: .inline)
