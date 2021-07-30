@@ -62,33 +62,29 @@ struct GenerativeDesignBookMenu: View {
     
     
     var body: some View {
-        if #available(iOS 15.0, *) {
-            List {
-                Section("Chapter One: Colors") {
-                    ForEach(0..<colorSketches.count) { idx in
-                        MenuItem(
-                            view: AnyView(buildView(sketches: colorSketches, index: idx)),
-                            title: colorSketches[idx].name,
-                            creationDate: colorSketches[idx].date
-                        )
-                    }
-                }
-                
-                Section("Chapter Two: Shapes") {
-                    ForEach(0..<shapeSketches.count) { idx in
-                        MenuItem(
-                            view: AnyView(buildView(sketches: shapeSketches, index: idx)),
-                            title: shapeSketches[idx].name,
-                            creationDate: shapeSketches[idx].date
-                        )
-                    }
+        List {
+            Section("Chapter One: Colors") {
+                ForEach(0..<colorSketches.count) { idx in
+                    MenuItem(
+                        view: AnyView(buildView(sketches: colorSketches, index: idx)),
+                        title: colorSketches[idx].name,
+                        creationDate: colorSketches[idx].date
+                    )
                 }
             }
-            .navigationBarTitle("Generative Design", displayMode: .inline)
-            .listStyle(.sidebar)
-        } else {
-            Text("iOS 14 Fallback view")
+            
+            Section("Chapter Two: Shapes") {
+                ForEach(0..<shapeSketches.count) { idx in
+                    MenuItem(
+                        view: AnyView(buildView(sketches: shapeSketches, index: idx)),
+                        title: shapeSketches[idx].name,
+                        creationDate: shapeSketches[idx].date
+                    )
+                }
+            }
         }
+        .navigationBarTitle("Generative Design", displayMode: .inline)
+        .listStyle(.sidebar)
     }
 }
 
