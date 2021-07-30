@@ -7,11 +7,6 @@
 
 import SwiftUI
 
-protocol Sketch {
-    static var name: String { get }
-    static var date: String { get }
-}
-
 struct GenerativeDesignBookMenu: View {
     
     var colorSketches: [Sketch.Type] = [
@@ -65,14 +60,6 @@ struct GenerativeDesignBookMenu: View {
         }
     }
     
-    func sketchName(sketches: [Sketch.Type], index: Int) -> String {
-        return sketches[index].self.name
-    }
-    
-    func sketchDate(sketches: [Sketch.Type], index: Int) -> String {
-        return sketches[index].self.date
-    }
-
     
     var body: some View {
         if #available(iOS 15.0, *) {
@@ -81,8 +68,8 @@ struct GenerativeDesignBookMenu: View {
                     ForEach(0..<colorSketches.count) { idx in
                         MenuItem(
                             view: AnyView(buildView(sketches: colorSketches, index: idx)),
-                            title: sketchName(sketches: colorSketches, index: idx),
-                            creationDate: sketchDate(sketches: colorSketches, index: idx)
+                            title: colorSketches[idx].name,
+                            creationDate: colorSketches[idx].date
                         )
                     }
                 }
@@ -91,8 +78,8 @@ struct GenerativeDesignBookMenu: View {
                     ForEach(0..<shapeSketches.count) { idx in
                         MenuItem(
                             view: AnyView(buildView(sketches: shapeSketches, index: idx)),
-                            title: sketchName(sketches: shapeSketches, index: idx),
-                            creationDate: sketchDate(sketches: shapeSketches, index: idx)
+                            title: shapeSketches[idx].name,
+                            creationDate: shapeSketches[idx].date
                         )
                     }
                 }

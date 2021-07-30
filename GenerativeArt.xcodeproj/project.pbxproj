@@ -38,6 +38,8 @@
 		FAA30F8A26A7E25100F1F3E7 /* HelloShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA30F8926A7E25100F1F3E7 /* HelloShape.swift */; };
 		FAA8FDA826ABBCC30000D195 /* AlignmentGridColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA8FDA726ABBCC30000D195 /* AlignmentGridColor.swift */; };
 		FAA8FDAA26ABC15D0000D195 /* AlignmentGridSymbols.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA8FDA926ABC15D0000D195 /* AlignmentGridSymbols.swift */; };
+		FAB25CC226B3B44C00314CAD /* Sketch.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB25CC126B3B44C00314CAD /* Sketch.swift */; };
+		FAB25CC426B3B47900314CAD /* NatureOfCodeMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB25CC326B3B47900314CAD /* NatureOfCodeMenu.swift */; };
 		FAE3D88D269D3CD500170749 /* ColorPaletteInterpolation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE3D88C269D3CD500170749 /* ColorPaletteInterpolation.swift */; };
 		FAEC623626B33A7700A40023 /* ComplexModules.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEC623526B33A7700A40023 /* ComplexModules.swift */; };
 /* End PBXBuildFile section */
@@ -77,6 +79,8 @@
 		FAA30F8926A7E25100F1F3E7 /* HelloShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloShape.swift; sourceTree = "<group>"; };
 		FAA8FDA726ABBCC30000D195 /* AlignmentGridColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlignmentGridColor.swift; sourceTree = "<group>"; };
 		FAA8FDA926ABC15D0000D195 /* AlignmentGridSymbols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlignmentGridSymbols.swift; sourceTree = "<group>"; };
+		FAB25CC126B3B44C00314CAD /* Sketch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sketch.swift; sourceTree = "<group>"; };
+		FAB25CC326B3B47900314CAD /* NatureOfCodeMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NatureOfCodeMenu.swift; sourceTree = "<group>"; };
 		FAE3D88C269D3CD500170749 /* ColorPaletteInterpolation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPaletteInterpolation.swift; sourceTree = "<group>"; };
 		FAEC623526B33A7700A40023 /* ComplexModules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplexModules.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -118,6 +122,7 @@
 				FA4494A72694D00800892772 /* Shared Views */,
 				FA4494A02694CF4F00892772 /* My Sketches */,
 				FA44949F2694CD8500892772 /* Generative Design Book */,
+				FAB25CC026B3B40800314CAD /* Nature of Code Book */,
 				FA0F140726941B0400B962E5 /* GenerativeArtApp.swift */,
 				FA4494A32694CF9300892772 /* MainMenu.swift */,
 				FA0F140B26941B0500B962E5 /* Assets.xcassets */,
@@ -151,6 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				FA3920D026AFAD21004157B6 /* ArbitraryRandomNumberGenerator.swift */,
+				FAB25CC126B3B44C00314CAD /* Sketch.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -212,6 +218,14 @@
 				FAEC623526B33A7700A40023 /* ComplexModules.swift */,
 			);
 			path = Shape;
+			sourceTree = "<group>";
+		};
+		FAB25CC026B3B40800314CAD /* Nature of Code Book */ = {
+			isa = PBXGroup;
+			children = (
+				FAB25CC326B3B47900314CAD /* NatureOfCodeMenu.swift */,
+			);
+			path = "Nature of Code Book";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -293,12 +307,14 @@
 				FA68490C26A5197400EA8A0F /* ColorRules.swift in Sources */,
 				FA64F09F26A251BC007D3D31 /* ColorFromImages.swift in Sources */,
 				FA76C33B26A699E800068735 /* ColorRulesTransparent.swift in Sources */,
+				FAB25CC226B3B44C00314CAD /* Sketch.swift in Sources */,
 				FAEC623626B33A7700A40023 /* ComplexModules.swift in Sources */,
 				FA3920C426AF4F5C004157B6 /* MovementGrid.swift in Sources */,
 				FA3FF8EF26ADDF4D007336D5 /* RotatingGrid.swift in Sources */,
 				FA8C860B269BD5030008AFB1 /* ColorSpectrumGrid.swift in Sources */,
 				FAA30F8726A7CCC200F1F3E7 /* ColorRulesDropout.swift in Sources */,
 				FA1C1D69269EA822002BF120 /* RGBInterpolation.swift in Sources */,
+				FAB25CC426B3B47900314CAD /* NatureOfCodeMenu.swift in Sources */,
 				FA0F141B269421DE00B962E5 /* AcrossComplementaryShapes.swift in Sources */,
 				FA0F140826941B0400B962E5 /* GenerativeArtApp.swift in Sources */,
 				FA4494A92694D01800892772 /* MenuItem.swift in Sources */,
