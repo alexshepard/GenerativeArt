@@ -31,6 +31,7 @@ struct GenerativeDesignBookMenu: View {
         RadGrid.self,
         JitterQuads.self,
         ComplexModules.self,
+        LineModules.self,
     ]
 
     @ViewBuilder
@@ -55,6 +56,7 @@ struct GenerativeDesignBookMenu: View {
         case is RadGrid.Type: RadGrid()
         case is JitterQuads.Type: JitterQuads()
         case is ComplexModules.Type: ComplexModules()
+        case is LineModules.Type: LineModules()
 
         default: EmptyView()
         }
