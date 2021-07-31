@@ -8,7 +8,9 @@
 import SwiftUI
 
 extension Path {
-    init(radiatingLinesIn rect: CGRect, lineCount: Int = 10) {
+    init(radiatingLinesIn rect: CGRect, lineCountPerSide: Int = 10) {
+        assert(lineCountPerSide >= 1, "line count per side must be at least 1")
+        
         self.init()
         let origin = CGPoint(x: rect.midX, y: rect.midY)
         
@@ -16,22 +18,22 @@ extension Path {
             var x2: CGFloat = .zero
             var y2: CGFloat = .zero
             
-            for i in 0..<lineCount {
+            for i in 0..<lineCountPerSide {
                 if side == 0 {
                     // top side - left to right
-                    x2 = rect.minX + (rect.size.width / CGFloat(lineCount)) * CGFloat(i)
+                    x2 = rect.minX + (rect.size.width / CGFloat(lineCountPerSide)) * CGFloat(i)
                     y2 = rect.minY
                 } else if side == 1 {
                     // left side, bottom to top
                     x2 = rect.minX
-                    y2 = rect.maxY - (rect.size.height / CGFloat(lineCount)) * CGFloat(i)
+                    y2 = rect.maxY - (rect.size.height / CGFloat(lineCountPerSide)) * CGFloat(i)
                 } else if side == 2 {
                     // right side, top to bottom
                     x2 = rect.maxX
-                    y2 = rect.minY + (rect.size.height / CGFloat(lineCount)) * CGFloat(i)
+                    y2 = rect.minY + (rect.size.height / CGFloat(lineCountPerSide)) * CGFloat(i)
                 } else if side == 3 {
                     // bottom side, right to left
-                    x2 = rect.maxX - (rect.size.width / CGFloat(lineCount)) * CGFloat(i)
+                    x2 = rect.maxX - (rect.size.width / CGFloat(lineCountPerSide)) * CGFloat(i)
                     y2 = rect.maxY
                 }
                 let end = CGPoint(x: x2, y: y2)
@@ -65,7 +67,7 @@ struct LineModules: View, Sketch {
                 for gridY in stride(from: 0, to: size.height, by: yStrideLength) {
                     for gridX in stride(from: 0, to: size.width, by: xStrideLength) {
                         let rect = CGRect(x: gridX, y: gridY, width: xStrideLength, height: yStrideLength)
-                        context.stroke(Path(radiatingLinesIn: rect, lineCount: 25), with: .color(.green.opacity(0.2)), lineWidth: 1)
+                        context.stroke(Path(radiatingLinesIn: rect, lineCountPerSide: 3), with: .color(.green.opacity(0.2)), lineWidth: 1)
                         
                     }
                 }
