@@ -8,35 +8,35 @@
 import SwiftUI
 
 extension Path {
-    init(lineModuleIn rect: CGRect) {
+    init(radiatingLinesIn rect: CGRect, lineCount: Int = 10) {
         self.init()
-        let x1 = rect.midX
-        let y1 = rect.midY
-        let pt1 = CGPoint(x: x1, y: y1)
+        let origin = CGPoint(x: rect.midX, y: rect.midY)
         
         for side in 0..<4 {
-            self.move(to: pt1)
             var x2: CGFloat = .zero
             var y2: CGFloat = .zero
             
-            for i in 0...10 {
+            for i in 0..<lineCount {
                 if side == 0 {
-                    x2 = rect.minX + (rect.size.width / CGFloat(10)) * CGFloat(i)
+                    // top side - left to right
+                    x2 = rect.minX + (rect.size.width / CGFloat(lineCount)) * CGFloat(i)
                     y2 = rect.minY
                 } else if side == 1 {
+                    // left side, bottom to top
                     x2 = rect.minX
-                    y2 = rect.maxY - (rect.size.height / CGFloat(10)) * CGFloat(i)
+                    y2 = rect.maxY - (rect.size.height / CGFloat(lineCount)) * CGFloat(i)
                 } else if side == 2 {
+                    // right side, top to bottom
                     x2 = rect.maxX
-                    y2 = rect.maxY - (rect.size.height / CGFloat(10)) * CGFloat(i)
+                    y2 = rect.minY + (rect.size.height / CGFloat(lineCount)) * CGFloat(i)
                 } else if side == 3 {
-                    x2 = rect.minX + (rect.size.width / CGFloat(10)) * CGFloat(i)
+                    // bottom side, right to left
+                    x2 = rect.maxX - (rect.size.width / CGFloat(lineCount)) * CGFloat(i)
                     y2 = rect.maxY
                 }
-                let pt2 = CGPoint(x: x2, y: y2)
-                self.move(to: pt1)
-                self.addLine(to: pt2)
-
+                let end = CGPoint(x: x2, y: y2)
+                move(to: origin)
+                addLine(to: end)
             }
         }
     }
@@ -51,9 +51,10 @@ struct LineModules: View, Sketch {
     var body: some View {
         VStack {
             Canvas { context, size in
+                context.blendMode = .screen
                 
-                var xStrideLength: CGFloat = 50
-                var yStrideLength: CGFloat = 50
+                var xStrideLength: CGFloat = 200
+                var yStrideLength: CGFloat = 200
                 let minStrideLength: CGFloat = 25
 
                 if touchLocation != .zero {
@@ -64,11 +65,12 @@ struct LineModules: View, Sketch {
                 for gridY in stride(from: 0, to: size.height, by: yStrideLength) {
                     for gridX in stride(from: 0, to: size.width, by: xStrideLength) {
                         let rect = CGRect(x: gridX, y: gridY, width: xStrideLength, height: yStrideLength)
-                        context.stroke(Path(lineModuleIn: rect), with: .color(.black), lineWidth: 1)
+                        context.stroke(Path(radiatingLinesIn: rect, lineCount: 25), with: .color(.green.opacity(0.2)), lineWidth: 1)
                         
                     }
                 }
             }
+            .background(Color.orange)
             .gesture(DragGesture(minimumDistance: 0, coordinateSpace: .local)
                         .onChanged({ newValue in
                                         self.touchLocation = newValue.location
