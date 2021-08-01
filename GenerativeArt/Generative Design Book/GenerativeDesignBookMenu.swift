@@ -32,6 +32,7 @@ struct GenerativeDesignBookMenu: View {
         JitterQuads.self,
         ComplexModules.self,
         LineModules.self,
+        DiamondModules.self,
     ]
 
     @ViewBuilder
@@ -57,6 +58,7 @@ struct GenerativeDesignBookMenu: View {
         case is JitterQuads.Type: JitterQuads()
         case is ComplexModules.Type: ComplexModules()
         case is LineModules.Type: LineModules()
+        case is DiamondModules.Type: DiamondModules()
 
         default: EmptyView()
         }

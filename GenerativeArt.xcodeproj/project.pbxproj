@@ -39,6 +39,7 @@
 		FAA8FDA826ABBCC30000D195 /* AlignmentGridColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA8FDA726ABBCC30000D195 /* AlignmentGridColor.swift */; };
 		FAA8FDAA26ABC15D0000D195 /* AlignmentGridSymbols.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA8FDA926ABC15D0000D195 /* AlignmentGridSymbols.swift */; };
 		FAAF564426B5CB6D0086D6FD /* LineModules.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAF564326B5CB6D0086D6FD /* LineModules.swift */; };
+		FAAF564A26B63C150086D6FD /* DiamondModules.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAF564926B63C150086D6FD /* DiamondModules.swift */; };
 		FAB25CC226B3B44C00314CAD /* Sketch.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB25CC126B3B44C00314CAD /* Sketch.swift */; };
 		FAB25CC426B3B47900314CAD /* NatureOfCodeMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB25CC326B3B47900314CAD /* NatureOfCodeMenu.swift */; };
 		FAE3D88D269D3CD500170749 /* ColorPaletteInterpolation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE3D88C269D3CD500170749 /* ColorPaletteInterpolation.swift */; };
@@ -81,6 +82,7 @@
 		FAA8FDA726ABBCC30000D195 /* AlignmentGridColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlignmentGridColor.swift; sourceTree = "<group>"; };
 		FAA8FDA926ABC15D0000D195 /* AlignmentGridSymbols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlignmentGridSymbols.swift; sourceTree = "<group>"; };
 		FAAF564326B5CB6D0086D6FD /* LineModules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineModules.swift; sourceTree = "<group>"; };
+		FAAF564926B63C150086D6FD /* DiamondModules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiamondModules.swift; sourceTree = "<group>"; };
 		FAB25CC126B3B44C00314CAD /* Sketch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sketch.swift; sourceTree = "<group>"; };
 		FAB25CC326B3B47900314CAD /* NatureOfCodeMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NatureOfCodeMenu.swift; sourceTree = "<group>"; };
 		FAE3D88C269D3CD500170749 /* ColorPaletteInterpolation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPaletteInterpolation.swift; sourceTree = "<group>"; };
@@ -219,6 +221,7 @@
 				FA7A4E4026B2847200833D83 /* Quadrilaterals.swift */,
 				FAEC623526B33A7700A40023 /* ComplexModules.swift */,
 				FAAF564326B5CB6D0086D6FD /* LineModules.swift */,
+				FAAF564926B63C150086D6FD /* DiamondModules.swift */,
 			);
 			path = Shape;
 			sourceTree = "<group>";
@@ -329,6 +332,7 @@
 				FAE3D88D269D3CD500170749 /* ColorPaletteInterpolation.swift in Sources */,
 				FAA30F8A26A7E25100F1F3E7 /* HelloShape.swift in Sources */,
 				FAA8FDAA26ABC15D0000D195 /* AlignmentGridSymbols.swift in Sources */,
+				FAAF564A26B63C150086D6FD /* DiamondModules.swift in Sources */,
 				FA8C860D269BE5D70008AFB1 /* Extensions.swift in Sources */,
 				FA3920D126AFAD21004157B6 /* ArbitraryRandomNumberGenerator.swift in Sources */,
 				FA28CB5426A4AEC2000E1E63 /* AnimatedAcrossShapes.swift in Sources */,
