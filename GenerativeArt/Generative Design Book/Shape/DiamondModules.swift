@@ -9,6 +9,9 @@ import SwiftUI
 
 extension Path {
     init(diamondIn rect: CGRect, originOffset: CGFloat = 0, lineCountPerSide: Int = 10) {
+        assert(lineCountPerSide >= 1, "line count per side must be at least 1")
+        assert(originOffset >= 0.0, "origin offset must be positive")
+
         self.init()
         
         let leftOrigin = CGPoint(x: rect.minX, y: rect.minY + originOffset)
