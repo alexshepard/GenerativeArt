@@ -13,9 +13,7 @@ extension Path {
         assert(originOffset >= 0.0, "origin offset must be positive")
         
         self.init()
-        let originX = centered ? rect.midX : rect.origin.x + originOffset
-        let originY = rect.origin.y + originOffset
-        let origin = CGPoint(x: originX, y: originY)
+        let origin: CGPoint = centered ? .zero : CGPoint(x: rect.maxX, y: rect.minY)
         
         for side in 0..<4 {
             var x2: CGFloat = .zero
@@ -63,7 +61,7 @@ struct CorridorModules: View, Sketch {
                 .padding([.leading, .trailing, .bottom])
 
             Canvas { context, size in
-                context.blendMode = .normal
+                context.blendMode = .screen
                                 
                 let strideLength: CGFloat = 100
                 
@@ -76,7 +74,8 @@ struct CorridorModules: View, Sketch {
                     let xend = staggered ? (counter.isMultiple(of: 2) ? size.width : size.width + strideLength / 2) : size.width
                     for gridX in stride(from: xorigin, to: xend, by: strideLength) {
                         let rect = CGRect(x: gridX, y: gridY, width: strideLength, height: strideLength)
-                        context.stroke(Path(corridorIn: rect, originOffset: offset, lineCountPerSide: numLines, centered: centeredCorridoor), with: .color(.black))
+                        context.stroke(Path(corridorIn: rect, originOffset: offset, lineCountPerSide: numLines, centered: true), with: .color(.green.opacity(0.8)))
+                        context.stroke(Path(corridorIn: rect, originOffset: offset, lineCountPerSide: numLines, centered: false), with: .color(.blue.opacity(0.3)))
                     }
                     counter += 1
                 }
