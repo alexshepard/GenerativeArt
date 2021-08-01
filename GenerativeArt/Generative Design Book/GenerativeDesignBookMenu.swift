@@ -33,6 +33,7 @@ struct GenerativeDesignBookMenu: View {
         ComplexModules.self,
         LineModules.self,
         DiamondModules.self,
+        CorridorModules.self,
     ]
 
     @ViewBuilder
@@ -59,7 +60,8 @@ struct GenerativeDesignBookMenu: View {
         case is ComplexModules.Type: ComplexModules()
         case is LineModules.Type: LineModules()
         case is DiamondModules.Type: DiamondModules()
-
+        case is CorridorModules.Type: CorridorModules()
+            
         default: EmptyView()
         }
     }
