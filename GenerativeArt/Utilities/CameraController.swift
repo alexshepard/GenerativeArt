@@ -20,9 +20,11 @@ class CameraController: NSObject, ObservableObject {
     let ciContext = CIContext(options: nil)
     
     var cameraPosition: AVCaptureDevice.Position
+    var fps: Double
     
-    init(cameraPosition: AVCaptureDevice.Position) {
+    init(cameraPosition: AVCaptureDevice.Position, fps: Double = 5) {
         self.cameraPosition = cameraPosition
+        self.fps = fps
         
         super.init()
         
@@ -84,7 +86,7 @@ extension CameraController: AVCaptureVideoDataOutputSampleBufferDelegate {
     func captureOutput(_ output: AVCaptureOutput, didOutput sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection) {
         if let lastFrame = lastFrame {
             let timeSinceLastFrame = Date().timeIntervalSince(lastFrame)
-            if timeSinceLastFrame < 1/5 {
+            if timeSinceLastFrame < 1/fps {
                 return
             }
         }
