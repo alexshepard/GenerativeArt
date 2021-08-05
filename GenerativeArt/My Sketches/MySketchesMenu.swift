@@ -8,40 +8,63 @@
 import SwiftUI
 
 struct MySketchesMenu: View {
+    
+    var jul2021Skektches: [Sketch.Type] = [
+        AcrossShapes.self,
+        AcrossComplementaryShapes.self,
+        PerlinAcrossShapes.self,
+        ColorFromCamera.self,
+        AnimatedAcrossShapes.self,
+        RotatingGrid.self,
+    ]
+    
+    var aug2021Skektches: [Sketch.Type] = [
+        LinesFromCamera.self,
+    ]
+    
+
+    @ViewBuilder
+    func buildView(sketches: [Any], index: Int) -> some View {
+        switch sketches[index].self {
+            
+        case is AcrossShapes.Type: AcrossShapes()
+        case is AcrossComplementaryShapes.Type: AcrossComplementaryShapes()
+        case is PerlinAcrossShapes.Type: PerlinAcrossShapes()
+        case is ColorFromCamera.Type: ColorFromCamera()
+        case is AnimatedAcrossShapes.Type: AnimatedAcrossShapes()
+        case is RotatingGrid.Type: RotatingGrid()
+            
+        case is LinesFromCamera.Type: LinesFromCamera()
+
+        default: EmptyView()
+        }
+    }
+
+    
     var body: some View {
-        if #available(iOS 15.0, *) {
-            List {
-                Section("July 2021") {
-                    MenuItem(view: AnyView(AcrossShapes()),
-                             title: AcrossShapes.name,
-                             creationDate: AcrossShapes.date)
-                    
-                    MenuItem(view: AnyView(AcrossComplementaryShapes()),
-                             title: AcrossComplementaryShapes.name,
-                             creationDate: AcrossComplementaryShapes.date)
-
-                    MenuItem(view: AnyView(PerlinAcrossShapes()),
-                             title: PerlinAcrossShapes.name,
-                             creationDate: PerlinAcrossShapes.date)
-                    
-                    MenuItem(view: AnyView(ColorFromCamera()),
-                             title: ColorFromCamera.name,
-                             creationDate: ColorFromCamera.date)
-
-                    MenuItem(view: AnyView(AnimatedAcrossShapes()),
-                             title: AnimatedAcrossShapes.name,
-                             creationDate: AnimatedAcrossShapes.date)
-                    
-                    MenuItem(view: AnyView(RotatingGrid()),
-                             title: RotatingGrid.name,
-                             creationDate: RotatingGrid.date)
-
+        List {
+            Section("July 2021") {
+                ForEach(0..<jul2021Skektches.count) { idx in
+                    MenuItem(
+                        view: AnyView(buildView(sketches: jul2021Skektches, index: idx)),
+                        title: jul2021Skektches[idx].name,
+                        creationDate: jul2021Skektches[idx].date
+                    )
                 }
             }
-            .navigationBarTitle("My Sketches", displayMode: .inline)
-        } else {
-            Text("iOS 14 Fallback view")
+            
+            Section("August 2021") {
+                ForEach(0..<aug2021Skektches.count) { idx in
+                    MenuItem(
+                        view: AnyView(buildView(sketches: aug2021Skektches, index: idx)),
+                        title: aug2021Skektches[idx].name,
+                        creationDate: aug2021Skektches[idx].date
+                    )
+                }
+            }
         }
+        .navigationBarTitle("My Sketches", displayMode: .inline)
+        .listStyle(.sidebar)
     }
 }
 

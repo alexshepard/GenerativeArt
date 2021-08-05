@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct AcrossComplementaryShapes: View {
+struct AcrossComplementaryShapes: View, Sketch {
     public static let name = "Across Complementary Shapes"
     public static let date = "5 July 2021"
     

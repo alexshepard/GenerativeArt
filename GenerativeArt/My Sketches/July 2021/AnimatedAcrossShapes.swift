@@ -54,7 +54,7 @@ extension MyTriangle: Animatable {
     }
 }
 
-struct AnimatedAcrossShapes: View {
+struct AnimatedAcrossShapes: View, Sketch {
     public static let name = "Animated Across Shapes"
     public static let date = "18 July 2021"
     

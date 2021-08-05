@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct RotatingGrid: View {
+struct RotatingGrid: View, Sketch {
     public static let name = "Rotating in a grid"
     public static let date = "23 July 2021"
 

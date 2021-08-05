@@ -8,7 +8,7 @@
 import SwiftUI
 import GameplayKit
 
-struct PerlinAcrossShapes: View {
+struct PerlinAcrossShapes: View, Sketch {
     public static let name = "Perlin Across Shapes"
     public static let date = "5 July 2021"
     

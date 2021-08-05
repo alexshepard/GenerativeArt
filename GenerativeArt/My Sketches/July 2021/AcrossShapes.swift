@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct AcrossShapes: View {
+struct AcrossShapes: View, Sketch {
     
     public static let name = "Across Shapes"
     public static let date = "5 July 2021"

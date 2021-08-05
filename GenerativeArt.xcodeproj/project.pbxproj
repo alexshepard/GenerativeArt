@@ -24,6 +24,7 @@
 		FA4494A42694CF9300892772 /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4494A32694CF9300892772 /* MainMenu.swift */; };
 		FA4494A62694CFFE00892772 /* GenerativeDesignBookMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4494A52694CFFE00892772 /* GenerativeDesignBookMenu.swift */; };
 		FA4494A92694D01800892772 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4494A82694D01800892772 /* MenuItem.swift */; };
+		FA456C1526BC620F0063DD6B /* CameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA456C1426BC620F0063DD6B /* CameraController.swift */; };
 		FA64F09F26A251BC007D3D31 /* ColorFromImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA64F09E26A251BB007D3D31 /* ColorFromImages.swift */; };
 		FA64F0A126A26248007D3D31 /* ColorFromCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA64F0A026A26248007D3D31 /* ColorFromCamera.swift */; };
 		FA68490C26A5197400EA8A0F /* ColorRules.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA68490B26A5197400EA8A0F /* ColorRules.swift */; };
@@ -41,6 +42,7 @@
 		FAAF564426B5CB6D0086D6FD /* LineModules.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAF564326B5CB6D0086D6FD /* LineModules.swift */; };
 		FAAF564A26B63C150086D6FD /* DiamondModules.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAF564926B63C150086D6FD /* DiamondModules.swift */; };
 		FAAF56A226B70F3F0086D6FD /* CorridorModules.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAF56A126B70F3F0086D6FD /* CorridorModules.swift */; };
+		FAAF574B26B7242000927D76 /* LinesFromCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAF574A26B7242000927D76 /* LinesFromCamera.swift */; };
 		FAB25CC226B3B44C00314CAD /* Sketch.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB25CC126B3B44C00314CAD /* Sketch.swift */; };
 		FAB25CC426B3B47900314CAD /* NatureOfCodeMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB25CC326B3B47900314CAD /* NatureOfCodeMenu.swift */; };
 		FAE3D88D269D3CD500170749 /* ColorPaletteInterpolation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE3D88C269D3CD500170749 /* ColorPaletteInterpolation.swift */; };
@@ -66,6 +68,7 @@
 		FA4494A32694CF9300892772 /* MainMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenu.swift; sourceTree = "<group>"; };
 		FA4494A52694CFFE00892772 /* GenerativeDesignBookMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerativeDesignBookMenu.swift; sourceTree = "<group>"; };
 		FA4494A82694D01800892772 /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
+		FA456C1426BC620F0063DD6B /* CameraController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraController.swift; sourceTree = "<group>"; };
 		FA64F09E26A251BB007D3D31 /* ColorFromImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorFromImages.swift; sourceTree = "<group>"; };
 		FA64F0A026A26248007D3D31 /* ColorFromCamera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorFromCamera.swift; sourceTree = "<group>"; };
 		FA64F0A226A27B61007D3D31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -85,6 +88,7 @@
 		FAAF564326B5CB6D0086D6FD /* LineModules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineModules.swift; sourceTree = "<group>"; };
 		FAAF564926B63C150086D6FD /* DiamondModules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiamondModules.swift; sourceTree = "<group>"; };
 		FAAF56A126B70F3F0086D6FD /* CorridorModules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CorridorModules.swift; sourceTree = "<group>"; };
+		FAAF574A26B7242000927D76 /* LinesFromCamera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinesFromCamera.swift; sourceTree = "<group>"; };
 		FAB25CC126B3B44C00314CAD /* Sketch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sketch.swift; sourceTree = "<group>"; };
 		FAB25CC326B3B47900314CAD /* NatureOfCodeMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NatureOfCodeMenu.swift; sourceTree = "<group>"; };
 		FAE3D88C269D3CD500170749 /* ColorPaletteInterpolation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPaletteInterpolation.swift; sourceTree = "<group>"; };
@@ -163,6 +167,7 @@
 			children = (
 				FA3920D026AFAD21004157B6 /* ArbitraryRandomNumberGenerator.swift */,
 				FAB25CC126B3B44C00314CAD /* Sketch.swift */,
+				FA456C1426BC620F0063DD6B /* CameraController.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -182,6 +187,7 @@
 			children = (
 				FA0F141526941B1400B962E5 /* MySketchesMenu.swift */,
 				FA0F141926941B7200B962E5 /* July 2021 */,
+				FA456C1326BC614D0063DD6B /* August 2021 */,
 			);
 			path = "My Sketches";
 			sourceTree = "<group>";
@@ -192,6 +198,14 @@
 				FA4494A82694D01800892772 /* MenuItem.swift */,
 			);
 			path = "Shared Views";
+			sourceTree = "<group>";
+		};
+		FA456C1326BC614D0063DD6B /* August 2021 */ = {
+			isa = PBXGroup;
+			children = (
+				FAAF574A26B7242000927D76 /* LinesFromCamera.swift */,
+			);
+			path = "August 2021";
 			sourceTree = "<group>";
 		};
 		FA8C860E269BE80F0008AFB1 /* Color */ = {
@@ -323,7 +337,9 @@
 				FA3FF8EF26ADDF4D007336D5 /* RotatingGrid.swift in Sources */,
 				FA8C860B269BD5030008AFB1 /* ColorSpectrumGrid.swift in Sources */,
 				FAA30F8726A7CCC200F1F3E7 /* ColorRulesDropout.swift in Sources */,
+				FA456C1526BC620F0063DD6B /* CameraController.swift in Sources */,
 				FA1C1D69269EA822002BF120 /* RGBInterpolation.swift in Sources */,
+				FAAF574B26B7242000927D76 /* LinesFromCamera.swift in Sources */,
 				FAB25CC426B3B47900314CAD /* NatureOfCodeMenu.swift in Sources */,
 				FA0F141B269421DE00B962E5 /* AcrossComplementaryShapes.swift in Sources */,
 				FA0F140826941B0400B962E5 /* GenerativeArtApp.swift in Sources */,
