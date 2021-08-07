@@ -34,6 +34,7 @@ struct GenerativeDesignBookMenu: View {
         LineModules.self,
         DiamondModules.self,
         CorridorModules.self,
+        DarkeningCircles.self,
     ]
 
     @ViewBuilder
@@ -61,6 +62,7 @@ struct GenerativeDesignBookMenu: View {
         case is LineModules.Type: LineModules()
         case is DiamondModules.Type: DiamondModules()
         case is CorridorModules.Type: CorridorModules()
+        case is DarkeningCircles.Type: DarkeningCircles()
             
         default: EmptyView()
         }
