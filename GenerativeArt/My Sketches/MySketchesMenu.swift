@@ -20,6 +20,7 @@ struct MySketchesMenu: View {
     
     var aug2021Skektches: [Sketch.Type] = [
         LinesFromCamera.self,
+        TogglesFromCamera.self,
     ]
     
 
@@ -35,7 +36,8 @@ struct MySketchesMenu: View {
         case is RotatingGrid.Type: RotatingGrid()
             
         case is LinesFromCamera.Type: LinesFromCamera()
-
+        case is TogglesFromCamera.Type: TogglesFromCamera()
+            
         default: EmptyView()
         }
     }

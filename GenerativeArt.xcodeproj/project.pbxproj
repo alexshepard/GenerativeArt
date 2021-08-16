@@ -15,6 +15,7 @@
 		FA0F141B269421DE00B962E5 /* AcrossComplementaryShapes.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0F141A269421DE00B962E5 /* AcrossComplementaryShapes.swift */; };
 		FA0F141D26942BF100B962E5 /* PerlinAcrossShapes.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0F141C26942BF100B962E5 /* PerlinAcrossShapes.swift */; };
 		FA14F6D326CACC2C0011310C /* CheckboxesGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA14F6D226CACC2C0011310C /* CheckboxesGrid.swift */; };
+		FA14F6D526CAF2120011310C /* TogglesFromCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA14F6D426CAF2120011310C /* TogglesFromCamera.swift */; };
 		FA1C1D69269EA822002BF120 /* RGBInterpolation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1C1D68269EA822002BF120 /* RGBInterpolation.swift */; };
 		FA28466126C0219D00B39336 /* RotatingRects.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA28466026C0219D00B39336 /* RotatingRects.swift */; };
 		FA28CB5426A4AEC2000E1E63 /* AnimatedAcrossShapes.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA28CB5326A4AEC2000E1E63 /* AnimatedAcrossShapes.swift */; };
@@ -62,6 +63,7 @@
 		FA0F141A269421DE00B962E5 /* AcrossComplementaryShapes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcrossComplementaryShapes.swift; sourceTree = "<group>"; };
 		FA0F141C26942BF100B962E5 /* PerlinAcrossShapes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerlinAcrossShapes.swift; sourceTree = "<group>"; };
 		FA14F6D226CACC2C0011310C /* CheckboxesGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckboxesGrid.swift; sourceTree = "<group>"; };
+		FA14F6D426CAF2120011310C /* TogglesFromCamera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TogglesFromCamera.swift; sourceTree = "<group>"; };
 		FA1C1D68269EA822002BF120 /* RGBInterpolation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RGBInterpolation.swift; sourceTree = "<group>"; };
 		FA28466026C0219D00B39336 /* RotatingRects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotatingRects.swift; sourceTree = "<group>"; };
 		FA28CB5326A4AEC2000E1E63 /* AnimatedAcrossShapes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedAcrossShapes.swift; sourceTree = "<group>"; };
@@ -210,6 +212,7 @@
 			isa = PBXGroup;
 			children = (
 				FAAF574A26B7242000927D76 /* LinesFromCamera.swift */,
+				FA14F6D426CAF2120011310C /* TogglesFromCamera.swift */,
 			);
 			path = "August 2021";
 			sourceTree = "<group>";
@@ -340,6 +343,7 @@
 				FAAF564426B5CB6D0086D6FD /* LineModules.swift in Sources */,
 				FA0F141D26942BF100B962E5 /* PerlinAcrossShapes.swift in Sources */,
 				FA68490C26A5197400EA8A0F /* ColorRules.swift in Sources */,
+				FA14F6D526CAF2120011310C /* TogglesFromCamera.swift in Sources */,
 				FA64F09F26A251BC007D3D31 /* ColorFromImages.swift in Sources */,
 				FA76C33B26A699E800068735 /* ColorRulesTransparent.swift in Sources */,
 				FAB25CC226B3B44C00314CAD /* Sketch.swift in Sources */,
