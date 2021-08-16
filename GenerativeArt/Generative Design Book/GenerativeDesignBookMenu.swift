@@ -36,6 +36,7 @@ struct GenerativeDesignBookMenu: View {
         CorridorModules.self,
         DarkeningCircles.self,
         RotatingRects.self,
+        CheckboxesGrid.self,
     ]
 
     @ViewBuilder
@@ -65,7 +66,8 @@ struct GenerativeDesignBookMenu: View {
         case is CorridorModules.Type: CorridorModules()
         case is DarkeningCircles.Type: DarkeningCircles()
         case is RotatingRects.Type: RotatingRects()
-            
+        case is CheckboxesGrid.Type: CheckboxesGrid()
+        
         default: EmptyView()
         }
     }

@@ -14,6 +14,7 @@
 		FA0F141826941B6B00B962E5 /* AcrossShapes.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0F141726941B6B00B962E5 /* AcrossShapes.swift */; };
 		FA0F141B269421DE00B962E5 /* AcrossComplementaryShapes.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0F141A269421DE00B962E5 /* AcrossComplementaryShapes.swift */; };
 		FA0F141D26942BF100B962E5 /* PerlinAcrossShapes.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0F141C26942BF100B962E5 /* PerlinAcrossShapes.swift */; };
+		FA14F6D326CACC2C0011310C /* CheckboxesGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA14F6D226CACC2C0011310C /* CheckboxesGrid.swift */; };
 		FA1C1D69269EA822002BF120 /* RGBInterpolation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1C1D68269EA822002BF120 /* RGBInterpolation.swift */; };
 		FA28466126C0219D00B39336 /* RotatingRects.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA28466026C0219D00B39336 /* RotatingRects.swift */; };
 		FA28CB5426A4AEC2000E1E63 /* AnimatedAcrossShapes.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA28CB5326A4AEC2000E1E63 /* AnimatedAcrossShapes.swift */; };
@@ -60,6 +61,7 @@
 		FA0F141726941B6B00B962E5 /* AcrossShapes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcrossShapes.swift; sourceTree = "<group>"; };
 		FA0F141A269421DE00B962E5 /* AcrossComplementaryShapes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcrossComplementaryShapes.swift; sourceTree = "<group>"; };
 		FA0F141C26942BF100B962E5 /* PerlinAcrossShapes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerlinAcrossShapes.swift; sourceTree = "<group>"; };
+		FA14F6D226CACC2C0011310C /* CheckboxesGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckboxesGrid.swift; sourceTree = "<group>"; };
 		FA1C1D68269EA822002BF120 /* RGBInterpolation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RGBInterpolation.swift; sourceTree = "<group>"; };
 		FA28466026C0219D00B39336 /* RotatingRects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotatingRects.swift; sourceTree = "<group>"; };
 		FA28CB5326A4AEC2000E1E63 /* AnimatedAcrossShapes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedAcrossShapes.swift; sourceTree = "<group>"; };
@@ -245,6 +247,7 @@
 				FAAF56A126B70F3F0086D6FD /* CorridorModules.swift */,
 				FAB0987226BE450E00A06983 /* DarkeningCircles.swift */,
 				FA28466026C0219D00B39336 /* RotatingRects.swift */,
+				FA14F6D226CACC2C0011310C /* CheckboxesGrid.swift */,
 			);
 			path = Shape;
 			sourceTree = "<group>";
@@ -331,6 +334,7 @@
 				FA3920CE26AFA3F4004157B6 /* MovementGridUnder.swift in Sources */,
 				FA0F141626941B1400B962E5 /* MySketchesMenu.swift in Sources */,
 				FA4494A42694CF9300892772 /* MainMenu.swift in Sources */,
+				FA14F6D326CACC2C0011310C /* CheckboxesGrid.swift in Sources */,
 				FAB0987326BE450F00A06983 /* DarkeningCircles.swift in Sources */,
 				FA8C8609269BCA260008AFB1 /* HelloColor.swift in Sources */,
 				FAAF564426B5CB6D0086D6FD /* LineModules.swift in Sources */,
