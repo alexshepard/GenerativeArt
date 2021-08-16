@@ -15,6 +15,7 @@
 		FA0F141B269421DE00B962E5 /* AcrossComplementaryShapes.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0F141A269421DE00B962E5 /* AcrossComplementaryShapes.swift */; };
 		FA0F141D26942BF100B962E5 /* PerlinAcrossShapes.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0F141C26942BF100B962E5 /* PerlinAcrossShapes.swift */; };
 		FA1C1D69269EA822002BF120 /* RGBInterpolation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1C1D68269EA822002BF120 /* RGBInterpolation.swift */; };
+		FA28466126C0219D00B39336 /* RotatingRects.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA28466026C0219D00B39336 /* RotatingRects.swift */; };
 		FA28CB5426A4AEC2000E1E63 /* AnimatedAcrossShapes.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA28CB5326A4AEC2000E1E63 /* AnimatedAcrossShapes.swift */; };
 		FA3920C426AF4F5C004157B6 /* MovementGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3920C326AF4F5C004157B6 /* MovementGrid.swift */; };
 		FA3920CE26AFA3F4004157B6 /* MovementGridUnder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3920CD26AFA3F4004157B6 /* MovementGridUnder.swift */; };
@@ -60,6 +61,7 @@
 		FA0F141A269421DE00B962E5 /* AcrossComplementaryShapes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcrossComplementaryShapes.swift; sourceTree = "<group>"; };
 		FA0F141C26942BF100B962E5 /* PerlinAcrossShapes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerlinAcrossShapes.swift; sourceTree = "<group>"; };
 		FA1C1D68269EA822002BF120 /* RGBInterpolation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RGBInterpolation.swift; sourceTree = "<group>"; };
+		FA28466026C0219D00B39336 /* RotatingRects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotatingRects.swift; sourceTree = "<group>"; };
 		FA28CB5326A4AEC2000E1E63 /* AnimatedAcrossShapes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedAcrossShapes.swift; sourceTree = "<group>"; };
 		FA3920C326AF4F5C004157B6 /* MovementGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovementGrid.swift; sourceTree = "<group>"; };
 		FA3920CD26AFA3F4004157B6 /* MovementGridUnder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovementGridUnder.swift; sourceTree = "<group>"; };
@@ -242,6 +244,7 @@
 				FAAF564926B63C150086D6FD /* DiamondModules.swift */,
 				FAAF56A126B70F3F0086D6FD /* CorridorModules.swift */,
 				FAB0987226BE450E00A06983 /* DarkeningCircles.swift */,
+				FA28466026C0219D00B39336 /* RotatingRects.swift */,
 			);
 			path = Shape;
 			sourceTree = "<group>";
@@ -339,6 +342,7 @@
 				FAEC623626B33A7700A40023 /* ComplexModules.swift in Sources */,
 				FA3920C426AF4F5C004157B6 /* MovementGrid.swift in Sources */,
 				FA3FF8EF26ADDF4D007336D5 /* RotatingGrid.swift in Sources */,
+				FA28466126C0219D00B39336 /* RotatingRects.swift in Sources */,
 				FA8C860B269BD5030008AFB1 /* ColorSpectrumGrid.swift in Sources */,
 				FAA30F8726A7CCC200F1F3E7 /* ColorRulesDropout.swift in Sources */,
 				FA456C1526BC620F0063DD6B /* CameraController.swift in Sources */,
