@@ -37,6 +37,7 @@ struct GenerativeDesignBookMenu: View {
         DarkeningCircles.self,
         RotatingRects.self,
         CheckboxesGrid.self,
+        Moire.self,
     ]
 
     @ViewBuilder
@@ -67,6 +68,7 @@ struct GenerativeDesignBookMenu: View {
         case is DarkeningCircles.Type: DarkeningCircles()
         case is RotatingRects.Type: RotatingRects()
         case is CheckboxesGrid.Type: CheckboxesGrid()
+        case is Moire.Type: Moire()
         
         default: EmptyView()
         }

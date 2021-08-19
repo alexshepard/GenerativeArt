@@ -51,6 +51,7 @@
 		FAB25CC426B3B47900314CAD /* NatureOfCodeMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB25CC326B3B47900314CAD /* NatureOfCodeMenu.swift */; };
 		FAE3D88D269D3CD500170749 /* ColorPaletteInterpolation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE3D88C269D3CD500170749 /* ColorPaletteInterpolation.swift */; };
 		FAEC623626B33A7700A40023 /* ComplexModules.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEC623526B33A7700A40023 /* ComplexModules.swift */; };
+		FAEEE78526CDD74E00F2A840 /* Moire.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEEE78426CDD74E00F2A840 /* Moire.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -101,6 +102,7 @@
 		FAB25CC326B3B47900314CAD /* NatureOfCodeMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NatureOfCodeMenu.swift; sourceTree = "<group>"; };
 		FAE3D88C269D3CD500170749 /* ColorPaletteInterpolation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPaletteInterpolation.swift; sourceTree = "<group>"; };
 		FAEC623526B33A7700A40023 /* ComplexModules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplexModules.swift; sourceTree = "<group>"; };
+		FAEEE78426CDD74E00F2A840 /* Moire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Moire.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -251,6 +253,7 @@
 				FAB0987226BE450E00A06983 /* DarkeningCircles.swift */,
 				FA28466026C0219D00B39336 /* RotatingRects.swift */,
 				FA14F6D226CACC2C0011310C /* CheckboxesGrid.swift */,
+				FAEEE78426CDD74E00F2A840 /* Moire.swift */,
 			);
 			path = Shape;
 			sourceTree = "<group>";
@@ -340,6 +343,7 @@
 				FA14F6D326CACC2C0011310C /* CheckboxesGrid.swift in Sources */,
 				FAB0987326BE450F00A06983 /* DarkeningCircles.swift in Sources */,
 				FA8C8609269BCA260008AFB1 /* HelloColor.swift in Sources */,
+				FAEEE78526CDD74E00F2A840 /* Moire.swift in Sources */,
 				FAAF564426B5CB6D0086D6FD /* LineModules.swift in Sources */,
 				FA0F141D26942BF100B962E5 /* PerlinAcrossShapes.swift in Sources */,
 				FA68490C26A5197400EA8A0F /* ColorRules.swift in Sources */,
