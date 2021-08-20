@@ -25,10 +25,6 @@ struct Moire: View, Sketch {
             .pickerStyle(.segmented)
             .padding()
             
-            if shape == 1 {
-                Text("TBD")
-            }
-            
             Canvas { context, size in
                 
                 if shape == 0 {
@@ -71,6 +67,54 @@ struct Moire: View, Sketch {
 
                         innerContext.stroke(Path(ellipseIn: innerRect), with: .color(color))
                     }
+                } else {
+                    let sideLength = min(size.width, size.height)
+                    
+                    var rect = CGRect(x: 0, y: 0, width: size.width, height: size.height)
+                    if size.height > size.width {
+                        rect = rect.insetBy(dx: 0, dy: (size.height - size.width)/2)
+                    } else {
+                        rect = rect.insetBy(dx: 0, dy: (size.width - size.height)/2)
+                    }
+                    
+                    for i in stride(from: 0, to: sideLength, by: 4) {
+                        let path = Path { path in
+                            path.move(to: CGPoint(x: rect.minX + i, y: rect.minY))
+                            path.addLine(to: CGPoint(x: rect.minX + i, y: rect.maxY))
+                        }
+                        
+                        var sat = CGFloat(i).map(minRange: 0, maxRange: sideLength, minDomain: 0, maxDomain: 1.0)
+                        sat = sat.clamp(to: 0...1)
+                        let color = Color(hue: 0.33, saturation: sat, brightness: 0.8)
+
+                        context.stroke(path, with: .color(color), lineWidth: 2)
+                    }
+                    
+                    var innerContext = context
+                    innerContext.translateBy(x: rect.midX, y: rect.midY)
+                    
+                    // rotate in relation to the x drag location
+                    let degrees = touchLocation.x.map(minRange: 0, maxRange: size.width, minDomain: -180, maxDomain: 180)
+                    innerContext.rotate(by: .degrees(degrees))
+                    
+                    // scale up and down in relation to the y drag location
+                    let scaleAmt = touchLocation.y.map(minRange: 0, maxRange: size.height, minDomain: 0.5, maxDomain: 1.2)
+                    innerContext.scaleBy(x: scaleAmt, y: scaleAmt)
+                                        
+                    for i in stride(from: -sideLength/2, to: sideLength/2, by: 4) {
+                        let path = Path { path in
+                            path.move(to: CGPoint(x: i, y: -sideLength/2))
+                            path.addLine(to: CGPoint(x: i, y: sideLength/2))
+                        }
+                        
+                        var sat = CGFloat(i).map(minRange: 0, maxRange: sideLength, minDomain: 0, maxDomain: 1.0)
+                        sat = sat.clamp(to: 0...1)
+                        let color = Color(hue: 0.33, saturation: sat, brightness: 0.8)
+
+                        innerContext.stroke(path, with: .color(color), lineWidth: 2)
+                    }
+
+    
                 }
 
             }
