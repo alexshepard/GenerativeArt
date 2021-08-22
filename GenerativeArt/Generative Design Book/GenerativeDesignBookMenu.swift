@@ -38,6 +38,7 @@ struct GenerativeDesignBookMenu: View {
         RotatingRects.self,
         CheckboxesGrid.self,
         Moire.self,
+        TapMoire.self,
     ]
 
     @ViewBuilder
@@ -69,6 +70,7 @@ struct GenerativeDesignBookMenu: View {
         case is RotatingRects.Type: RotatingRects()
         case is CheckboxesGrid.Type: CheckboxesGrid()
         case is Moire.Type: Moire()
+        case is TapMoire.Type: TapMoire()
         
         default: EmptyView()
         }

@@ -38,6 +38,7 @@
 		FA8C860B269BD5030008AFB1 /* ColorSpectrumGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8C860A269BD5030008AFB1 /* ColorSpectrumGrid.swift */; };
 		FA8C860D269BE5D70008AFB1 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8C860C269BE5D70008AFB1 /* Extensions.swift */; };
 		FA8C8610269BE8430008AFB1 /* ColorSpectrumCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8C860F269BE8430008AFB1 /* ColorSpectrumCircle.swift */; };
+		FA9EBB5926D1CDB100B78C7A /* TapMoire.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9EBB5826D1CDB100B78C7A /* TapMoire.swift */; };
 		FAA30F8726A7CCC200F1F3E7 /* ColorRulesDropout.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA30F8626A7CCC200F1F3E7 /* ColorRulesDropout.swift */; };
 		FAA30F8A26A7E25100F1F3E7 /* HelloShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA30F8926A7E25100F1F3E7 /* HelloShape.swift */; };
 		FAA8FDA826ABBCC30000D195 /* AlignmentGridColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA8FDA726ABBCC30000D195 /* AlignmentGridColor.swift */; };
@@ -89,6 +90,7 @@
 		FA8C860A269BD5030008AFB1 /* ColorSpectrumGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSpectrumGrid.swift; sourceTree = "<group>"; };
 		FA8C860C269BE5D70008AFB1 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		FA8C860F269BE8430008AFB1 /* ColorSpectrumCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSpectrumCircle.swift; sourceTree = "<group>"; };
+		FA9EBB5826D1CDB100B78C7A /* TapMoire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapMoire.swift; sourceTree = "<group>"; };
 		FAA30F8626A7CCC200F1F3E7 /* ColorRulesDropout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorRulesDropout.swift; sourceTree = "<group>"; };
 		FAA30F8926A7E25100F1F3E7 /* HelloShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloShape.swift; sourceTree = "<group>"; };
 		FAA8FDA726ABBCC30000D195 /* AlignmentGridColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlignmentGridColor.swift; sourceTree = "<group>"; };
@@ -254,6 +256,7 @@
 				FA28466026C0219D00B39336 /* RotatingRects.swift */,
 				FA14F6D226CACC2C0011310C /* CheckboxesGrid.swift */,
 				FAEEE78426CDD74E00F2A840 /* Moire.swift */,
+				FA9EBB5826D1CDB100B78C7A /* TapMoire.swift */,
 			);
 			path = Shape;
 			sourceTree = "<group>";
@@ -338,6 +341,7 @@
 			files = (
 				FA8C8610269BE8430008AFB1 /* ColorSpectrumCircle.swift in Sources */,
 				FA3920CE26AFA3F4004157B6 /* MovementGridUnder.swift in Sources */,
+				FA9EBB5926D1CDB100B78C7A /* TapMoire.swift in Sources */,
 				FA0F141626941B1400B962E5 /* MySketchesMenu.swift in Sources */,
 				FA4494A42694CF9300892772 /* MainMenu.swift in Sources */,
 				FA14F6D326CACC2C0011310C /* CheckboxesGrid.swift in Sources */,
