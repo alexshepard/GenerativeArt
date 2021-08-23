@@ -39,6 +39,7 @@ struct GenerativeDesignBookMenu: View {
         CheckboxesGrid.self,
         Moire.self,
         TapMoire.self,
+        DragMoire.self,
     ]
 
     @ViewBuilder
@@ -71,6 +72,7 @@ struct GenerativeDesignBookMenu: View {
         case is CheckboxesGrid.Type: CheckboxesGrid()
         case is Moire.Type: Moire()
         case is TapMoire.Type: TapMoire()
+        case is DragMoire.Type: DragMoire()
         
         default: EmptyView()
         }

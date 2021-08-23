@@ -24,6 +24,15 @@ extension CGFloat {
     }
 }
 
+extension CGPoint {
+    func distance(to other: CGPoint) -> CGFloat {
+        let xDist = self.x - other.x
+        let yDist = self.y - other.y
+        return sqrt(xDist * xDist + yDist * yDist)
+    }
+
+}
+
 extension Comparable {
     func clamp(to range: ClosedRange<Self>) -> Self {
         let min = range.lowerBound

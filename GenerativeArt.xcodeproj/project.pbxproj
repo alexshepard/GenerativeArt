@@ -34,6 +34,7 @@
 		FA6A610126B10D21001D1493 /* RadGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6A610026B10D21001D1493 /* RadGrid.swift */; };
 		FA76C33B26A699E800068735 /* ColorRulesTransparent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA76C33A26A699E800068735 /* ColorRulesTransparent.swift */; };
 		FA7A4E4126B2847200833D83 /* Quadrilaterals.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7A4E4026B2847200833D83 /* Quadrilaterals.swift */; };
+		FA8A131626D33075000D5D5F /* DragMoire.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8A131526D33075000D5D5F /* DragMoire.swift */; };
 		FA8C8609269BCA260008AFB1 /* HelloColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8C8608269BCA260008AFB1 /* HelloColor.swift */; };
 		FA8C860B269BD5030008AFB1 /* ColorSpectrumGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8C860A269BD5030008AFB1 /* ColorSpectrumGrid.swift */; };
 		FA8C860D269BE5D70008AFB1 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8C860C269BE5D70008AFB1 /* Extensions.swift */; };
@@ -86,6 +87,7 @@
 		FA6A610026B10D21001D1493 /* RadGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadGrid.swift; sourceTree = "<group>"; };
 		FA76C33A26A699E800068735 /* ColorRulesTransparent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorRulesTransparent.swift; sourceTree = "<group>"; };
 		FA7A4E4026B2847200833D83 /* Quadrilaterals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quadrilaterals.swift; sourceTree = "<group>"; };
+		FA8A131526D33075000D5D5F /* DragMoire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragMoire.swift; sourceTree = "<group>"; };
 		FA8C8608269BCA260008AFB1 /* HelloColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloColor.swift; sourceTree = "<group>"; };
 		FA8C860A269BD5030008AFB1 /* ColorSpectrumGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSpectrumGrid.swift; sourceTree = "<group>"; };
 		FA8C860C269BE5D70008AFB1 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
@@ -257,6 +259,7 @@
 				FA14F6D226CACC2C0011310C /* CheckboxesGrid.swift */,
 				FAEEE78426CDD74E00F2A840 /* Moire.swift */,
 				FA9EBB5826D1CDB100B78C7A /* TapMoire.swift */,
+				FA8A131526D33075000D5D5F /* DragMoire.swift */,
 			);
 			path = Shape;
 			sourceTree = "<group>";
@@ -352,6 +355,7 @@
 				FA0F141D26942BF100B962E5 /* PerlinAcrossShapes.swift in Sources */,
 				FA68490C26A5197400EA8A0F /* ColorRules.swift in Sources */,
 				FA14F6D526CAF2120011310C /* TogglesFromCamera.swift in Sources */,
+				FA8A131626D33075000D5D5F /* DragMoire.swift in Sources */,
 				FA64F09F26A251BC007D3D31 /* ColorFromImages.swift in Sources */,
 				FA76C33B26A699E800068735 /* ColorRulesTransparent.swift in Sources */,
 				FAB25CC226B3B44C00314CAD /* Sketch.swift in Sources */,
