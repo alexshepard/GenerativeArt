@@ -9,6 +9,7 @@ import Foundation
 import CoreGraphics
 import Swift
 import UIKit
+import Accelerate
 
 extension CGFloat {
     func deg2rad() -> CGFloat {
@@ -30,7 +31,24 @@ extension CGPoint {
         let yDist = self.y - other.y
         return sqrt(xDist * xDist + yDist * yDist)
     }
+}
 
+extension CGPoint: AccelerateMutableBuffer {
+    // thank you https://stackoverflow.com/questions/63037282/conforming-cgpoint-to-acceleratemutablebuffer-to-use-vdsp
+    public typealias Element = Double
+    public var count: Int { 2 }
+    public func withUnsafeBufferPointer<R>(_ body: (UnsafeBufferPointer<Double>) throws -> R) rethrows -> R {
+        try Swift.withUnsafeBytes(of: self) { unsafeRawBufferPointer in
+            try body(unsafeRawBufferPointer.bindMemory(to: Element.self))
+        }
+    }
+    
+    public mutating func withUnsafeMutableBufferPointer<R>(_ body: (inout UnsafeMutableBufferPointer<Double>) throws -> R) rethrows -> R {
+        try Swift.withUnsafeMutableBytes(of: &self, { unsafeMutableRawBufferPointer in
+            var unsafeMutableBufferPointer = unsafeMutableRawBufferPointer.bindMemory(to: Element.self)
+            return try body(&unsafeMutableBufferPointer)
+        })
+    }
 }
 
 extension Comparable {

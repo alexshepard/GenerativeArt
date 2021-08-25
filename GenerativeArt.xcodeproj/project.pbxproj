@@ -51,6 +51,7 @@
 		FAB0987326BE450F00A06983 /* DarkeningCircles.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB0987226BE450E00A06983 /* DarkeningCircles.swift */; };
 		FAB25CC226B3B44C00314CAD /* Sketch.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB25CC126B3B44C00314CAD /* Sketch.swift */; };
 		FAB25CC426B3B47900314CAD /* NatureOfCodeMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB25CC326B3B47900314CAD /* NatureOfCodeMenu.swift */; };
+		FAC0CC5D26D5957C005F8E9F /* DrawMoire.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC0CC5C26D5957C005F8E9F /* DrawMoire.swift */; };
 		FAE3D88D269D3CD500170749 /* ColorPaletteInterpolation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE3D88C269D3CD500170749 /* ColorPaletteInterpolation.swift */; };
 		FAEC623626B33A7700A40023 /* ComplexModules.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEC623526B33A7700A40023 /* ComplexModules.swift */; };
 		FAEEE78526CDD74E00F2A840 /* Moire.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEEE78426CDD74E00F2A840 /* Moire.swift */; };
@@ -104,6 +105,7 @@
 		FAB0987226BE450E00A06983 /* DarkeningCircles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkeningCircles.swift; sourceTree = "<group>"; };
 		FAB25CC126B3B44C00314CAD /* Sketch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sketch.swift; sourceTree = "<group>"; };
 		FAB25CC326B3B47900314CAD /* NatureOfCodeMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NatureOfCodeMenu.swift; sourceTree = "<group>"; };
+		FAC0CC5C26D5957C005F8E9F /* DrawMoire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawMoire.swift; sourceTree = "<group>"; };
 		FAE3D88C269D3CD500170749 /* ColorPaletteInterpolation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPaletteInterpolation.swift; sourceTree = "<group>"; };
 		FAEC623526B33A7700A40023 /* ComplexModules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplexModules.swift; sourceTree = "<group>"; };
 		FAEEE78426CDD74E00F2A840 /* Moire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Moire.swift; sourceTree = "<group>"; };
@@ -260,6 +262,7 @@
 				FAEEE78426CDD74E00F2A840 /* Moire.swift */,
 				FA9EBB5826D1CDB100B78C7A /* TapMoire.swift */,
 				FA8A131526D33075000D5D5F /* DragMoire.swift */,
+				FAC0CC5C26D5957C005F8E9F /* DrawMoire.swift */,
 			);
 			path = Shape;
 			sourceTree = "<group>";
@@ -376,6 +379,7 @@
 				FA3BD5DA26AB17160050DA92 /* AlignmentGrid.swift in Sources */,
 				FA64F0A126A26248007D3D31 /* ColorFromCamera.swift in Sources */,
 				FA6A610126B10D21001D1493 /* RadGrid.swift in Sources */,
+				FAC0CC5D26D5957C005F8E9F /* DrawMoire.swift in Sources */,
 				FAE3D88D269D3CD500170749 /* ColorPaletteInterpolation.swift in Sources */,
 				FAA30F8A26A7E25100F1F3E7 /* HelloShape.swift in Sources */,
 				FAA8FDAA26ABC15D0000D195 /* AlignmentGridSymbols.swift in Sources */,
