@@ -41,6 +41,7 @@ struct GenerativeDesignBookMenu: View {
         TapMoire.self,
         DragMoire.self,
         DrawMoire.self,
+        DumbAgents.self,
     ]
 
     @ViewBuilder
@@ -75,6 +76,7 @@ struct GenerativeDesignBookMenu: View {
         case is TapMoire.Type: TapMoire()
         case is DragMoire.Type: DragMoire()
         case is DrawMoire.Type: DrawMoire()
+        case is DumbAgents.Type: DumbAgents()
         
         default: EmptyView()
         }
