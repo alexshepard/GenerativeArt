@@ -29,6 +29,7 @@
 		FA4494A62694CFFE00892772 /* GenerativeDesignBookMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4494A52694CFFE00892772 /* GenerativeDesignBookMenu.swift */; };
 		FA4494A92694D01800892772 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4494A82694D01800892772 /* MenuItem.swift */; };
 		FA456C1526BC620F0063DD6B /* CameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA456C1426BC620F0063DD6B /* CameraController.swift */; };
+		FA64BDFA26DD38BE002F85C6 /* IntelligentAgents.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA64BDF926DD38BD002F85C6 /* IntelligentAgents.swift */; };
 		FA64F09F26A251BC007D3D31 /* ColorFromImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA64F09E26A251BB007D3D31 /* ColorFromImages.swift */; };
 		FA64F0A126A26248007D3D31 /* ColorFromCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA64F0A026A26248007D3D31 /* ColorFromCamera.swift */; };
 		FA68490C26A5197400EA8A0F /* ColorRules.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA68490B26A5197400EA8A0F /* ColorRules.swift */; };
@@ -82,6 +83,7 @@
 		FA4494A52694CFFE00892772 /* GenerativeDesignBookMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerativeDesignBookMenu.swift; sourceTree = "<group>"; };
 		FA4494A82694D01800892772 /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
 		FA456C1426BC620F0063DD6B /* CameraController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraController.swift; sourceTree = "<group>"; };
+		FA64BDF926DD38BD002F85C6 /* IntelligentAgents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntelligentAgents.swift; sourceTree = "<group>"; };
 		FA64F09E26A251BB007D3D31 /* ColorFromImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorFromImages.swift; sourceTree = "<group>"; };
 		FA64F0A026A26248007D3D31 /* ColorFromCamera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorFromCamera.swift; sourceTree = "<group>"; };
 		FA64F0A226A27B61007D3D31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -266,6 +268,7 @@
 				FA8A131526D33075000D5D5F /* DragMoire.swift */,
 				FAC0CC5C26D5957C005F8E9F /* DrawMoire.swift */,
 				FA33397526D6E233008B524B /* DumbAgents.swift */,
+				FA64BDF926DD38BD002F85C6 /* IntelligentAgents.swift */,
 			);
 			path = Shape;
 			sourceTree = "<group>";
@@ -383,6 +386,7 @@
 				FA3BD5DA26AB17160050DA92 /* AlignmentGrid.swift in Sources */,
 				FA64F0A126A26248007D3D31 /* ColorFromCamera.swift in Sources */,
 				FA6A610126B10D21001D1493 /* RadGrid.swift in Sources */,
+				FA64BDFA26DD38BE002F85C6 /* IntelligentAgents.swift in Sources */,
 				FAC0CC5D26D5957C005F8E9F /* DrawMoire.swift in Sources */,
 				FAE3D88D269D3CD500170749 /* ColorPaletteInterpolation.swift in Sources */,
 				FAA30F8A26A7E25100F1F3E7 /* HelloShape.swift in Sources */,
