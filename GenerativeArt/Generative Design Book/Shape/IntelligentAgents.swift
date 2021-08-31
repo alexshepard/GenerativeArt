@@ -16,6 +16,7 @@ struct AgentLine {
     let origin: CGPoint
     let end: CGPoint
     let width: CGFloat
+    let color: Color
 }
 
 struct IntelligentAgents: View, Sketch {
@@ -25,8 +26,11 @@ struct IntelligentAgents: View, Sketch {
     @State private var currentOrigin = CGPoint.zero
     @State private var currentAngle = Angle.zero
     @State private var currentSteps: Double = 0
-    @State private var stepSize: Double = 2
-    @State private var angleCount: Double = 2
+    @State private var stepSize: Double = 4
+    @State private var angleCount: Double = 7
+    
+    private var colorModes = ["Black", "Warm", "Cool"]
+    @State private var colorMode = 0
     
     let timer = Timer.publish(every: 1/60, on: .main, in: .common).autoconnect()
     
@@ -35,6 +39,14 @@ struct IntelligentAgents: View, Sketch {
     
     var body: some View {
         VStack {
+            Picker("colorMode", selection: $colorMode) {
+                ForEach(0..<colorModes.count) {
+                    Text(colorModes[$0])
+                }
+            }
+            .pickerStyle(.segmented)
+            .padding([.horizontal, .bottom])
+            
             Stepper("\(angleCount, specifier: "%g") angles", value: $angleCount, in: 2...7)
                 .padding(.horizontal)
             
@@ -46,7 +58,7 @@ struct IntelligentAgents: View, Sketch {
                             path.move(to: line.origin)
                             path.addLine(to: line.end)
                         }
-                        context.stroke(path, with: .color(.black), lineWidth: line.width)
+                        context.stroke(path, with: .color(line.color), lineWidth: line.width)
                     }
                     
                     let path = Path { path in
@@ -72,9 +84,18 @@ struct IntelligentAgents: View, Sketch {
                     // check if the point intersects (ie is very close to) any existing lines
                     for line in lines {
                         let distance = distanceFromPoint(point: currentPoint, toLineSegment: line.origin, and: line.end)
-                         if distance < 1 {
-                            let width = currentOrigin.distance(to: currentPoint).map(minRange: 0, maxRange: 1000, minDomain: 1, maxDomain: 10)
-                            self.lines.append(AgentLine(origin: currentOrigin, end: currentPoint, width: width))
+                        if distance < 1 {
+                            let distance = currentOrigin.distance(to: currentPoint)
+                            let lineWidth = distance / 50
+                            
+                            var color = Color.black
+                            if colorMode == 1 {
+                                color = Color(hue: 52/360, saturation: 1.0, brightness: (distance / 4) / 100)
+                            } else if colorMode == 2 {
+                                color = Color(hue: 192/360, saturation: 1.0, brightness: 0.64, opacity: (distance / 4) / 100)
+                            }
+
+                            self.lines.append(AgentLine(origin: currentOrigin, end: currentPoint, width: lineWidth, color: color))
                             
                             currentSteps = 0
                             currentOrigin = currentPoint
@@ -84,38 +105,54 @@ struct IntelligentAgents: View, Sketch {
                     }
                     
                     // check if at edge
+                    var makeNewLine = false
+                    var direction: CardinalDirection = .north
                     if x <= 10 {
-                        let width = currentOrigin.distance(to: currentPoint).map(minRange: 0, maxRange: 1000, minDomain: 1, maxDomain: 10)
-                        self.lines.append(AgentLine(origin: currentOrigin, end: currentPoint, width: width))
+                        makeNewLine = true
+                        direction = .east
+                    } else if x >= geom.size.width - 10 {
+                        makeNewLine = true
+                        direction = .west
+                    } else if y <= 10 {
+                        makeNewLine = true
+                        direction = .south
+                    } else if y >= geom.size.height - 10 {
+                        makeNewLine = true
+                        direction = .north
+                    }
+                    
+                    if makeNewLine {
+                        let distance = currentOrigin.distance(to: currentPoint)
+                        let lineWidth = distance / 50
+                        
+                        var color = Color.black
+                        if colorMode == 1 {
+                            color = Color(hue: 52/360, saturation: 1.0, brightness: (distance / 4) / 100)
+                        } else if colorMode == 2 {
+                            color = Color(hue: 192/360, saturation: 1.0, brightness: 0.64, opacity: (distance / 4) / 100)
+                        }
+                        
+                        self.lines.append(AgentLine(origin: currentOrigin, end: currentPoint, width: lineWidth, color: color))
                         
                         currentSteps = 0
                         currentOrigin = currentPoint
-                        currentAngle = getRandomAngle(direction: .east)
-                    } else if x >= geom.size.width - 10 {
-                        let width = currentOrigin.distance(to: currentPoint).map(minRange: 0, maxRange: 1000, minDomain: 1, maxDomain: 3)
-                        self.lines.append(AgentLine(origin: currentOrigin, end: currentPoint, width: width))
-
-                        currentSteps = 0
-                        currentOrigin = currentPoint
-                        currentAngle = getRandomAngle(direction: .west)
-                    } else if y <= 10 {
-                        let width = currentOrigin.distance(to: currentPoint).map(minRange: 0, maxRange: 1000, minDomain: 1, maxDomain: 3)
-                        self.lines.append(AgentLine(origin: currentOrigin, end: currentPoint, width: width))
-
-                        currentSteps = 0
-                        currentOrigin = currentPoint
-                        currentAngle = getRandomAngle(direction: .south)
-                    } else if y >= geom.size.height - 10 {
-                        let width = currentOrigin.distance(to: currentPoint).map(minRange: 0, maxRange: 1000, minDomain: 1, maxDomain: 3)
-                        self.lines.append(AgentLine(origin: currentOrigin, end: currentPoint, width: width))
-
-                        currentSteps = 0
-                        currentOrigin = currentPoint
-                        currentAngle = getRandomAngle(direction: .north)
+                        currentAngle = getRandomAngle(direction: direction)
                     }
+
                 }
             }
             
+        }
+        .toolbar {
+            Button {
+                self.currentOrigin = self.currentPoint
+                self.currentSteps = 0
+                self.lines.removeAll()
+            } label: {
+                Image(systemName: "delete.left")
+                Text("Clear")
+            }
+
         }
     }
     
